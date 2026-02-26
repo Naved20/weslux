@@ -12,13 +12,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "WES Luxembourg for Education | Mentorship Program",
-  description: "Non-profit association dedicated to creating opportunities for personal and professional growth through mentorship in Luxembourg",
+  title: "WES LUX",
+  description: "WES LUX - WES Luxembourg for Education. Non-profit association creating opportunities for personal and professional growth through mentorship in Luxembourg",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/image.png" type="image/png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

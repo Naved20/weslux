@@ -1,36 +1,56 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Header/Navigation */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">WES</span>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 relative">
+                <Image 
+                  src="/image.png" 
+                  alt="WESLUX Logo" 
+                  fill
+                  className="object-contain"
+                  sizes="40px"
+                />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">WES Luxembourg</h1>
-                <p className="text-xs text-gray-600">for Education</p>
+                <h1 className="text-xl font-bold text-gray-900">WESLUX</h1>
+                <p className="text-xs text-gray-600">Mentorship for Education</p>
               </div>
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <Link href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
-              <Link href="#about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</Link>
-              <Link href="#program" className="text-gray-700 hover:text-blue-600 font-medium">Program Details</Link>
-              <Link href="#partners" className="text-gray-700 hover:text-blue-600 font-medium">Our Partners</Link>
-              <Link href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact Us</Link>
+              <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+              <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">About Us</a>
+              <a href="#program" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Program</a>
+              <div className="relative group">
+                <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors flex items-center">
+                  Our Partners and With Us
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div className="absolute hidden group-hover:block hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-64 z-50">
+                  <a href="#schools" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">1. For Schools</a>
+                  <a href="#companies" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">2. For Companies</a>
+                  <a href="#government" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">3. For Government & Social Organizations</a>
+                  <a href="#cso" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">4. Civil Society Organizations</a>
+                  <a href="#corporate" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">5. Corporate Partners</a>
+                  <a href="#education" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">6. Educational Institutions</a>
+                </div>
+              </div>
+              <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
             </nav>
             
-            <div className="flex space-x-4">
-              <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium">
+            <div className="flex space-x-3">
+              <button className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                 Support Us
               </button>
-              <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-medium">
+              <button className="px-5 py-2.5 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-medium transition-colors">
                 Mentorship App
               </button>
             </div>
@@ -49,7 +69,7 @@ export default function Home() {
               We create paths where talent meets opportunity.
             </p>
             <p className="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
-              WES Luxembourg for Education is a non-profit association based in Luxembourg, dedicated to creating opportunities for personal and professional growth by developing a Mentorship Program that bridges education and professional reality.
+              WESLUX (WES Luxembourg for Education) is a non-profit association based in Luxembourg, dedicated to creating opportunities for personal and professional growth by developing a Mentorship Program that bridges education and professional reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium text-lg">
@@ -252,31 +272,81 @@ export default function Home() {
       {/* Partners Section */}
       <section id="partners" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Partners</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Partners and With Us</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-gray-400 font-bold text-lg mb-1">Partner {i}</div>
-                  <div className="text-xs text-gray-500">Logo</div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-blue-600 font-bold">1</span>
                 </div>
+                <h3 className="text-xl font-bold text-gray-900">For Schools</h3>
               </div>
-            ))}
+              <p className="text-gray-600">Educational institutions partnership for student mentorship programs</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-green-600 font-bold">2</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">For Companies</h3>
+              </div>
+              <p className="text-gray-600">Industry collaboration and employee mentorship programs</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-purple-600 font-bold">3</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">For Government & Social Organizations</h3>
+              </div>
+              <p className="text-gray-600">Public sector and social organization partnerships</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-orange-600 font-bold">4</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Civil Society Organizations</h3>
+              </div>
+              <p className="text-gray-600">Non-profit and community organization collaborations</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-red-600 font-bold">5</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Corporate Partners</h3>
+              </div>
+              <p className="text-gray-600">Business sector partnerships for mentorship initiatives</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-indigo-600 font-bold">6</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Educational Institutions</h3>
+              </div>
+              <p className="text-gray-600">Universities, colleges, and training centers collaboration</p>
+            </div>
           </div>
           
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
-            <div className="text-center p-6">
-              <h4 className="font-bold text-gray-900 mb-2">For Schools</h4>
-              <p className="text-sm text-gray-600">Educational institutions partnership</p>
-            </div>
-            <div className="text-center p-6">
-              <h4 className="font-bold text-gray-900 mb-2">Corporate Partners</h4>
-              <p className="text-sm text-gray-600">Industry collaboration</p>
-            </div>
-            <div className="text-center p-6">
-              <h4 className="font-bold text-gray-900 mb-2">Government & NGOs</h4>
-              <p className="text-sm text-gray-600">Social organization support</p>
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold text-center text-gray-900 mb-6">Partner Logos</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div key={i} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center h-24">
+                  <div className="text-center">
+                    <div className="text-gray-400 font-bold">Partner {i}</div>
+                    <div className="text-xs text-gray-500 mt-1">Logo</div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -334,13 +404,19 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <span className="font-bold">WES</span>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 relative">
+                  <Image 
+                    src="/image.png" 
+                    alt="WESLUX Logo" 
+                    fill
+                    className="object-contain"
+                    sizes="40px"
+                  />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">WES Luxembourg for Education</h3>
-                  <p className="text-sm text-gray-400">Non-profit Association (ASBL)</p>
+                  <h3 className="text-xl font-bold">WESLUX</h3>
+                  <p className="text-sm text-gray-400">Mentorship for Education</p>
                 </div>
               </div>
               <p className="text-gray-400">
@@ -366,7 +442,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2026 WES Luxembourg for Education. All rights reserved.</p>
+            <p>© 2026 WESLUX - WES Luxembourg for Education. All rights reserved.</p>
           </div>
         </div>
       </footer>
