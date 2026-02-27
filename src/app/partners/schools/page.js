@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function SchoolsPage() {
   return (
@@ -90,9 +91,9 @@ export default function SchoolsPage() {
             <p className="text-lg mb-6 text-blue-100">
               Let's work together to create impactful learning experiences for your students
             </p>
-            <a href="/contact" className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Link href="/contact" className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
       </div>

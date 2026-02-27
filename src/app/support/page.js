@@ -2,6 +2,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function SupportPage() {
   const scrollToForm = () => {
@@ -155,7 +156,9 @@ export default function SupportPage() {
                         Donate goods or services such as technology equipment, software licenses, venue space, or professional services.
                       </p>
                       <button className="px-6 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-200">
+                        <Link href="/contact">
                         Contact Us
+                        </Link>
                       </button>
                     </div>
                   </div>
@@ -415,9 +418,9 @@ export default function SupportPage() {
                 >
                   Donate Now
                 </button>
-                <a href="/contact" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-green-600 transition-all duration-300">
+                <Link href="/contact" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-green-600 transition-all duration-300">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
