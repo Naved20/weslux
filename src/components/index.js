@@ -1,0 +1,9 @@
+export { default as Header } from './Header';
+export { default as Hero } from './Hero';
+export { default as About } from './About';
+export { default as ProgramDetails } from './ProgramDetails';
+export { default as HowItWorks } from './HowItWorks';
+export { default as Partners } from './Partners';
+export { default as SDG } from './SDG';
+export { default as CTA } from './CTA';
+export { default as Footer } from './Footer';
