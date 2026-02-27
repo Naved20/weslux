@@ -91,9 +91,9 @@ export default function CSOPage() {
             <p className="text-lg mb-6 text-orange-100">
               Let's create meaningful change together through education and empowerment
             </p>
-            <button className="px-8 py-3 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a href="/contact" className="inline-block px-8 py-3 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get in Touch
-            </button>
+            </a>
           </div>
         </div>
       </div>

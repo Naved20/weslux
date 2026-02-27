@@ -185,11 +185,11 @@ export default function MentorshipPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                  <a href="https://mentorship.weslux.lu" target="_blank" rel="noopener noreferrer">
                   Apply Now
+                  </a>
                 </button>
-                <button className="px-8 py-3 border-2 border-blue-500 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all duration-300">
-                  Learn More
-                </button>
+
               </div>
             </div>
           </div>

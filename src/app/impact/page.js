@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function ImpactPage() {
   return (
@@ -317,12 +318,12 @@ export default function ImpactPage() {
                 Join us in creating meaningful change in students' lives. Whether as a mentor, partner, or supporter, your contribution matters.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <Link href="/volunteer" className="px-8 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl">
                   Become a Partner
-                </button>
-                <button className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-green-600 transition-all duration-300">
+                </Link>
+                <Link href="/support" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-green-600 transition-all duration-300">
                   Support Our Work
-                </button>
+                </Link>
               </div>
             </div>
           </div>

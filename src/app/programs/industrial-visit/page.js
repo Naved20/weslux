@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function IndustrialVisitPage() {
   return (
@@ -252,12 +253,12 @@ export default function IndustrialVisitPage() {
                 Join our Industrial Exposure Visit program and bridge the gap between theory and practice.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                <Link href="/news" className="px-8 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg">
                   Register Now
-                </button>
-                <button className="px-8 py-3 border-2 border-purple-500 text-purple-600 font-medium rounded-lg hover:bg-purple-50 transition-all duration-300">
+                </Link>
+                <Link href="/news" className="px-8 py-3 border-2 border-purple-500 text-purple-600 font-medium rounded-lg hover:bg-purple-50 transition-all duration-300">
                   View Schedule
-                </button>
+                </Link>
               </div>
             </div>
           </div>

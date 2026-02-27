@@ -1,7 +1,16 @@
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function SupportPage() {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('donation-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -17,7 +26,10 @@ export default function SupportPage() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Your generous support helps us empower students, connect them with mentors, and create opportunities that transform lives. Every contribution makes a difference.
               </p>
-              <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={scrollToForm}
+                className="px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
                 Donate Now
               </button>
             </div>
@@ -154,7 +166,7 @@ export default function SupportPage() {
         </section>
 
         {/* Donation Form */}
-        <section className="py-16 bg-white">
+        <section id="donation-form" className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-br from-green-50 to-white p-8 md:p-12 rounded-2xl shadow-xl">
@@ -397,7 +409,10 @@ export default function SupportPage() {
                 Whether it's €10 or €1,000, your support helps us create opportunities that change lives. Join us in empowering the next generation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <button 
+                  onClick={scrollToForm}
+                  className="px-8 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
                   Donate Now
                 </button>
                 <a href="/contact" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-green-600 transition-all duration-300">

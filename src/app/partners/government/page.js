@@ -91,9 +91,9 @@ export default function GovernmentPage() {
             <p className="text-lg mb-6 text-purple-100">
               Let's collaborate to advance education and workforce development at scale
             </p>
-            <button className="px-8 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a href="/contact" className="inline-block px-8 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get in Touch
-            </button>
+            </a>
           </div>
         </div>
       </div>

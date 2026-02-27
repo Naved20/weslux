@@ -91,9 +91,9 @@ export default function CompaniesPage() {
             <p className="text-lg mb-6 text-green-100">
               Join leading companies in making a difference through education
             </p>
-            <button className="px-8 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a href="/contact" className="inline-block px-8 py-3 bg-white text-green-600 font-semibold rounded-lg hover:bg-green-50 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get in Touch
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -269,7 +269,7 @@ export default function AboutPage() {
                 Our team consists of educators, industry professionals, and volunteers working together to make a difference.
               </p>
               <a 
-                href="#contact" 
+                href="/contact" 
                 className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Get in Touch

@@ -214,9 +214,9 @@ export default function Header() {
               Support Us
             </a>
             
-            <button className="px-4 py-2 border-2 border-blue-500 text-blue-600 font-medium text-sm rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300 whitespace-nowrap">
+            <a href="https://mentorship.weslux.lu" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border-2 border-blue-500 text-blue-600 font-medium text-sm rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300 whitespace-nowrap">
               Mentorship App
-            </button>
+            </a>
           </div>
             
           {/* Mobile Menu Button */}
@@ -315,9 +315,9 @@ export default function Header() {
                   Support Us
                 </a>
                 
-                <button className="w-full px-4 py-2.5 border-2 border-blue-500 text-blue-600 font-medium text-sm rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300">
+                <a href="https://mentorship.weslux.lu" target="_blank" rel="noopener noreferrer" className="block w-full px-4 py-2.5 border-2 border-blue-500 text-blue-600 font-medium text-sm rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300 text-center">
                   Mentorship App
-                </button>
+                </a>
               </div>
             </div>
           </div>

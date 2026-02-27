@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function CTA() {
   return (
     <section className="py-20 bg-white">
@@ -8,12 +10,10 @@ export default function CTA() {
             Partner, volunteer, or contribute - every action strengthens mentorship and education access.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium">
+            <Link href="/support" className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors duration-200">
               Support WES Lux
-            </button>
-            <button className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 font-medium">
-              Download Flow Chart
-            </button>
+            </Link>
+
           </div>
         </div>
       </div>

@@ -1,7 +1,16 @@
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function VolunteerPage() {
+  const scrollToForm = () => {
+    const formSection = document.getElementById('volunteer-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -17,7 +26,10 @@ export default function VolunteerPage() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Make a lasting impact on students' lives by sharing your knowledge, experience, and passion. Join our community of dedicated volunteers today.
               </p>
-              <button className="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={scrollToForm}
+                className="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
                 Apply Now
               </button>
             </div>
@@ -298,44 +310,272 @@ export default function VolunteerPage() {
         </section>
 
         {/* How to Apply */}
-        <section className="py-16 bg-gray-50">
+        <section id="volunteer-form" className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">How to Apply</h2>
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow-md flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Complete the Application</h3>
-                    <p className="text-gray-600">
-                      Fill out our online volunteer application form with your details, experience, and areas of interest.
-                    </p>
-                  </div>
-                </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Volunteer Application Form</h2>
+              
+              <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
+                <form className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-2">
+                        First Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                        placeholder="John"
+                      />
+                    </div>
 
-                <div className="bg-white p-6 rounded-xl shadow-md flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
-                    2
+                    <div>
+                      <label htmlFor="lastName" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Last Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                        placeholder="Doe"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Interview & Orientation</h3>
-                    <p className="text-gray-600">
-                      Participate in a brief interview and attend our volunteer orientation session to learn about our programs and expectations.
-                    </p>
-                  </div>
-                </div>
 
-                <div className="bg-white p-6 rounded-xl shadow-md flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
-                    3
-                  </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Get Matched & Start</h3>
-                    <p className="text-gray-600">
-                      We'll match you with opportunities that align with your skills and interests, and you'll begin making an impact!
-                    </p>
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      placeholder="+352 123 456 789"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="country" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Country *
+                    </label>
+                    <input
+                      type="text"
+                      id="country"
+                      name="country"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      placeholder="Luxembourg"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="volunteerRole" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Volunteer Role Interest *
+                    </label>
+                    <select
+                      id="volunteerRole"
+                      name="volunteerRole"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    >
+                      <option value="">Select a role</option>
+                      <option value="mentor">Mentor</option>
+                      <option value="guest-speaker">Guest Speaker</option>
+                      <option value="industrial-host">Industrial Visit Host</option>
+                      <option value="workshop-facilitator">Workshop Facilitator</option>
+                      <option value="content-creator">Content Creator</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="profession" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Current Profession/Occupation *
+                    </label>
+                    <input
+                      type="text"
+                      id="profession"
+                      name="profession"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      placeholder="e.g., Software Engineer, Teacher, etc."
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Company/Organization
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      placeholder="Your company name"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="experience" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Years of Professional Experience *
+                    </label>
+                    <select
+                      id="experience"
+                      name="experience"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    >
+                      <option value="">Select experience level</option>
+                      <option value="0-2">0-2 years</option>
+                      <option value="3-5">3-5 years</option>
+                      <option value="6-10">6-10 years</option>
+                      <option value="10+">10+ years</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="expertise" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Areas of Expertise *
+                    </label>
+                    <textarea
+                      id="expertise"
+                      name="expertise"
+                      required
+                      rows="3"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
+                      placeholder="e.g., Software Development, Marketing, Finance, etc."
+                    ></textarea>
+                  </div>
+
+                  <div>
+                    <label htmlFor="availability" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Time Availability *
+                    </label>
+                    <select
+                      id="availability"
+                      name="availability"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    >
+                      <option value="">Select availability</option>
+                      <option value="2-4-hours">2-4 hours per month</option>
+                      <option value="5-8-hours">5-8 hours per month</option>
+                      <option value="flexible">Flexible</option>
+                      <option value="one-time">One-time events only</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="motivation" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Why do you want to volunteer with WES Luxembourg? *
+                    </label>
+                    <textarea
+                      id="motivation"
+                      name="motivation"
+                      required
+                      rows="4"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
+                      placeholder="Tell us about your motivation to volunteer..."
+                    ></textarea>
+                  </div>
+
+                  <div>
+                    <label htmlFor="linkedin" className="block text-sm font-semibold text-gray-700 mb-2">
+                      LinkedIn Profile URL
+                    </label>
+                    <input
+                      type="url"
+                      id="linkedin"
+                      name="linkedin"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      placeholder="https://linkedin.com/in/yourprofile"
+                    />
+                  </div>
+
+                  <div className="flex items-start">
+                    <input
+                      type="checkbox"
+                      id="terms"
+                      name="terms"
+                      required
+                      className="mt-1 mr-3 w-4 h-4 text-orange-600 border-gray-300 rounded focus:ring-orange-500"
+                    />
+                    <label htmlFor="terms" className="text-sm text-gray-600">
+                      I agree to the terms and conditions and understand that my information will be used to process my volunteer application. *
+                    </label>
+                  </div>
+
+                  <div className="flex items-start">
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      name="newsletter"
+                      className="mt-1 mr-3 w-4 h-4 text-orange-600 border-gray-300 rounded focus:ring-orange-500"
+                    />
+                    <label htmlFor="newsletter" className="text-sm text-gray-600">
+                      I would like to receive updates about volunteer opportunities and WES Luxembourg news.
+                    </label>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg text-lg"
+                  >
+                    Submit Application
+                  </button>
+
+                  <p className="text-xs text-gray-500 text-center">
+                    * Required fields. We'll review your application and get back to you within 5-7 business days.
+                  </p>
+                </form>
+              </div>
+
+              <div className="mt-12 text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Application Process</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-white p-6 rounded-xl shadow-md">
+                    <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                      1
+                    </div>
+                    <h4 className="font-bold text-gray-900 mb-2">Submit Application</h4>
+                    <p className="text-sm text-gray-600">Fill out the form above with your details</p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl shadow-md">
+                    <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                      2
+                    </div>
+                    <h4 className="font-bold text-gray-900 mb-2">Interview & Orientation</h4>
+                    <p className="text-sm text-gray-600">We'll contact you for a brief interview</p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl shadow-md">
+                    <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                      3
+                    </div>
+                    <h4 className="font-bold text-gray-900 mb-2">Start Volunteering</h4>
+                    <p className="text-sm text-gray-600">Get matched and begin making an impact</p>
                   </div>
                 </div>
               </div>
@@ -392,11 +632,11 @@ export default function VolunteerPage() {
                 Join our community of volunteers and help shape the future of education. Your time and expertise can change lives.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <button 
+                  onClick={scrollToForm}
+                  className="px-8 py-3 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
                   Apply to Volunteer
-                </button>
-                <button className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-orange-600 transition-all duration-300">
-                  Learn More
                 </button>
               </div>
             </div>

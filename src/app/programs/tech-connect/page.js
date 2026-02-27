@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function TechConnectPage() {
   return (
@@ -191,12 +192,12 @@ export default function TechConnectPage() {
                 Join Global Tech Connect and expand your horizons in the world of technology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                <Link href="/volunteer" className="px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg">
                   Join Now
-                </button>
-                <button className="px-8 py-3 border-2 border-green-500 text-green-600 font-medium rounded-lg hover:bg-green-50 transition-all duration-300">
+                </Link>
+                <Link href="/news" className="px-8 py-3 border-2 border-green-500 text-green-600 font-medium rounded-lg hover:bg-green-50 transition-all duration-300">
                   View Events
-                </button>
+                </Link>
               </div>
             </div>
           </div>

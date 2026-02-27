@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ProgramDetails() {
   return (
     <section id="program" className="py-20 bg-gray-50">
@@ -5,7 +7,7 @@ export default function ProgramDetails() {
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Program Details</h2>
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Link href="/programs/mentorship" className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
               <span className="text-blue-600 font-bold text-xl">1</span>
             </div>
@@ -34,9 +36,9 @@ export default function ProgramDetails() {
                 Professional development
               </li>
             </ul>
-          </div>
+          </Link>
           
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Link href="/programs/tech-connect" className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
               <span className="text-green-600 font-bold text-xl">2</span>
             </div>
@@ -64,9 +66,9 @@ export default function ProgramDetails() {
                 Technology knowledge sharing
               </li>
             </ul>
-          </div>
+          </Link>
           
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Link href="/programs/industrial-visit" className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
               <span className="text-purple-600 font-bold text-xl">3</span>
             </div>
@@ -94,7 +96,7 @@ export default function ProgramDetails() {
                 Practical industry insights
               </li>
             </ul>
-          </div>
+          </Link>
         </div>
 
         {/* Mentorship Types */}
@@ -106,13 +108,13 @@ export default function ProgramDetails() {
                 <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                   <span className="text-sm">✓</span>
                 </div>
-                <span>Long term for 10 months</span>
+                <span>Long term for 12 months</span>
               </div>
               <div className="flex items-center">
                 <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                   <span className="text-sm">✓</span>
                 </div>
-                <span>About 5 meetings</span>
+                <span>About 20 meetings</span>
               </div>
               <div className="flex items-center">
                 <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
@@ -130,13 +132,13 @@ export default function ProgramDetails() {
                 <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                   <span className="text-sm">✓</span>
                 </div>
-                <span>Short term for 3 months</span>
+                <span>Short term for 3-11 months</span>
               </div>
               <div className="flex items-center">
                 <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                   <span className="text-sm">✓</span>
                 </div>
-                <span>About 20 meetings, twice a month</span>
+                <span>meetings depends on months</span>
               </div>
               <div className="flex items-center">
                 <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
