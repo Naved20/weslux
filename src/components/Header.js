@@ -136,7 +136,7 @@ export default function Header() {
                 </div>
                 
                 <div className="py-2">
-                  <a href="#schools" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                  <Link href="/partners/schools" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
                     <div className="w-6 h-6 rounded-md bg-blue-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-blue-600">1</span>
                     </div>
@@ -144,9 +144,9 @@ export default function Header() {
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
-                  </a>
+                  </Link>
                   
-                  <a href="#companies" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                  <Link href="/partners/companies" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
                     <div className="w-6 h-6 rounded-md bg-green-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-green-600">2</span>
                     </div>
@@ -154,9 +154,9 @@ export default function Header() {
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
-                  </a>
+                  </Link>
                   
-                  <a href="#government" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                  <Link href="/partners/government" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
                     <div className="w-6 h-6 rounded-md bg-purple-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-purple-600">3</span>
                     </div>
@@ -164,9 +164,9 @@ export default function Header() {
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
-                  </a>
+                  </Link>
                   
-                  <a href="#cso" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                  <Link href="/partners/cso" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
                     <div className="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-orange-600">4</span>
                     </div>
@@ -174,7 +174,7 @@ export default function Header() {
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -288,18 +288,18 @@ export default function Header() {
                 
                 {mobilePartnersOpen && (
                   <div className="mt-2 ml-4 space-y-1 border-l-2 border-blue-100 pl-4">
-                    <a href="#schools" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <Link href="/partners/schools" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Schools & Educational Institutions
-                    </a>
-                    <a href="#companies" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    </Link>
+                    <Link href="/partners/companies" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Companies
-                    </a>
-                    <a href="#government" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    </Link>
+                    <Link href="/partners/government" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Government Organizations
-                    </a>
-                    <a href="#cso" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    </Link>
+                    <Link href="/partners/cso" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Social & Civil Society Organizations
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
