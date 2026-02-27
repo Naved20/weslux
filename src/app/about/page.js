@@ -53,6 +53,74 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Purpose Section */}
+        <section className="py-16 bg-gradient-to-br from-orange-50 via-white to-orange-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Purpose</h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  We exist to transform education by connecting students with the resources, mentorship, and experiences they need to thrive in an ever-changing world.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+                    <svg className="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Empower Students</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We empower students with the knowledge, skills, and confidence to pursue their dreams and make meaningful contributions to society.
+                  </p>
+                </div>
+
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Bridge Gaps</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We bridge the gap between academic learning and professional practice, ensuring students are prepared for real-world challenges.
+                  </p>
+                </div>
+
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                    <svg className="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Foster Connections</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We foster meaningful connections between students, educators, industry professionals, and organizations worldwide.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-12 bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                    </svg>
+                  </div>
+                  <div className="flex-grow text-center md:text-left">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Why It Matters</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      In today's rapidly evolving world, traditional education alone is not enough. Students need practical experience, industry insights, and mentorship to succeed. Our purpose is to provide these essential elements, creating pathways to success for every student we serve and contributing to a more equitable and prosperous future for all.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Who We Are Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">

@@ -179,12 +179,12 @@ export default function Header() {
               </div>
             </div>
             
-            <a href="#impact" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
+            <Link href="/impact" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
               <span className="relative">
                 Our Impact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </span>
-            </a>
+            </Link>
 
             <a href="#news" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
               <span className="relative">
@@ -304,7 +304,7 @@ export default function Header() {
                 )}
               </div>
               
-              <a href="#impact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Our Impact</a>
+              <Link href="/impact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Our Impact</Link>
               <a href="#news" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">News & Events</a>
               <a href="#volunteer" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Become a Volunteer</a>
               <a href="#contact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Contact</a>
