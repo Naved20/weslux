@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,6 +11,12 @@ export default function Header() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    setMobileProgramOpen(false);
+    setMobilePartnersOpen(false);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
     setMobileProgramOpen(false);
     setMobilePartnersOpen(false);
   };
@@ -50,19 +57,19 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-0.5">
-            <a href="#home" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
+            <Link href="/" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
               <span className="relative">
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </span>
-            </a>
+            </Link>
             
-            <a href="#about" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
+            <Link href="/about" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
               <span className="relative">
                 About Us
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </span>
-            </a>
+            </Link>
             
             {/* Program Dropdown */}
             <div className="relative group">
@@ -227,8 +234,8 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="lg:hidden mt-4 bg-white border border-gray-200 rounded-lg shadow-lg p-4 animate-fadeIn">
             <div className="space-y-2">
-              <a href="#home" className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Home</a>
-              <a href="#about" className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">About Us</a>
+              <Link href="/" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Home</Link>
+              <Link href="/about" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">About Us</Link>
               
               {/* Mobile Program Dropdown */}
               <div>
@@ -249,13 +256,13 @@ export default function Header() {
                 
                 {mobileProgramOpen && (
                   <div className="mt-2 ml-4 space-y-1 border-l-2 border-blue-100 pl-4">
-                    <a href="#mentorship" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#mentorship" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Mentorship Program
                     </a>
-                    <a href="#tech-connect" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#tech-connect" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Global Tech Connect
                     </a>
-                    <a href="#industrial" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#industrial" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Industrial Exposure Visit
                     </a>
                   </div>
@@ -281,26 +288,26 @@ export default function Header() {
                 
                 {mobilePartnersOpen && (
                   <div className="mt-2 ml-4 space-y-1 border-l-2 border-blue-100 pl-4">
-                    <a href="#schools" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#schools" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Schools & Educational Institutions
                     </a>
-                    <a href="#companies" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#companies" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Companies
                     </a>
-                    <a href="#government" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#government" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Government Organizations
                     </a>
-                    <a href="#cso" className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <a href="#cso" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Social & Civil Society Organizations
                     </a>
                   </div>
                 )}
               </div>
               
-              <a href="#impact" className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Our Impact</a>
-              <a href="#news" className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">News & Events</a>
-              <a href="#volunteer" className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Become a Volunteer</a>
-              <a href="#contact" className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Contact</a>
+              <a href="#impact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Our Impact</a>
+              <a href="#news" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">News & Events</a>
+              <a href="#volunteer" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Become a Volunteer</a>
+              <a href="#contact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Contact</a>
               
               {/* Mobile CTA Buttons */}
               <div className="pt-4 space-y-2 border-t border-gray-200 mt-4">
