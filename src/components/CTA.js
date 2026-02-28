@@ -11,7 +11,7 @@ export default function CTA() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/support" className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors duration-200">
-              Support WES Lux
+              Support Us
             </Link>
 
           </div>

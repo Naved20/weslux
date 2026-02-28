@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import { SDG } from '@/components';
 
 export default function ImpactPage() {
   return (
@@ -267,47 +268,7 @@ export default function ImpactPage() {
         </section>
 
         {/* SDG Alignment */}
-        <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Contributing to Global Goals</h2>
-              <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                Our work aligns with the United Nations Sustainable Development Goals, contributing to quality education, decent work, and reduced inequalities.
-              </p>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-red-600">4</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Quality Education</h3>
-                  <p className="text-gray-600 text-sm">
-                    Ensuring inclusive and equitable quality education for all students
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-                  <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-yellow-600">8</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Decent Work</h3>
-                  <p className="text-gray-600 text-sm">
-                    Promoting sustained economic growth and productive employment
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-                  <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-pink-600">10</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Reduced Inequalities</h3>
-                  <p className="text-gray-600 text-sm">
-                    Reducing inequality within and among countries through education
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SDG />
 
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-green-600 to-green-700">

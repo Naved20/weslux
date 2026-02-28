@@ -3,9 +3,10 @@ import {
   Hero,
   About,
   ProgramDetails,
-  HowItWorks,
   Partners,
   SDG,
+  NewsEvents,
+  PartnersShowcase,
   CTA,
   Footer,
 } from '@/components';
@@ -17,9 +18,10 @@ export default function Home() {
       <Hero />
       <About />
       <ProgramDetails />
-      <HowItWorks />
       <Partners />
       <SDG />
+      <NewsEvents />
+      <PartnersShowcase />
       <CTA />
       <Footer />
     </div>

@@ -92,6 +92,24 @@ export default function ContactPage() {
                     </div>
 
                     <div>
+                      <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                        programs *
+                      </label>
+                      <select
+                        id="subject"
+                        name="subject"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      >
+                        <option value="">Select a program</option>
+                        <option value="general">mentorship</option>
+                        <option value="partnership">global tech connect</option>
+                        <option value="mentorship">industrial Exposure visit</option>
+
+                      </select>
+                    </div>
+
+                    <div>
                       <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
                         Message *
                       </label>
@@ -130,8 +148,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">Email</h3>
-                        <p className="text-gray-600">info@wesluxembourg.org</p>
-                        <p className="text-gray-600">partnerships@wesluxembourg.org</p>
+                        <p className="text-gray-600">info@weslux.lu</p>
                       </div>
                     </div>
 
@@ -143,7 +160,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">Phone</h3>
-                        <p className="text-gray-600">+352 123 456 789</p>
+                        <p className="text-gray-600">+352 621 688 991</p>
                         <p className="text-gray-600 text-sm">Mon-Fri, 9:00 AM - 5:00 PM CET</p>
                       </div>
                     </div>
@@ -156,10 +173,22 @@ export default function ContactPage() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-1">Address</h3>
-                        <p className="text-gray-600">WES Luxembourg for Education</p>
+                        <h3 className="text-lg font-bold text-gray-900 mb-1">Registerd Address</h3>
                         <p className="text-gray-600">18 rue de Nicolas Meyers</p>
                         <p className="text-gray-600">Bascharage, Luxembourg 4918</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-1">Office Address</h3>
+                        <p className="text-gray-600">IN:CUBATOR <br />40, Boulevard Pierre Dupong  <br />L-1430 Luxembourg</p>
                       </div>
                     </div>
 
@@ -172,7 +201,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-1">Office Hours</h3>
                         <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                        <p className="text-gray-600">Saturday - Sunday: Closed</p>
+                        <p className="text-gray-600">Weekend more Focused, any time!</p>
                       </div>
                     </div>
                   </div>
@@ -216,7 +245,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Find Us</h2>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.8!2d5.9!3d49.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDMzJzM2LjAiTiA1wrA1NCcwMC4wIkU!5e0!3m2!1sen!2slu!4v1234567890"
+                  src="https://www.google.co.in/maps/place/IN:CUBATOR/@49.6062112,6.069792,13.36z/data=!4m7!3m6!1s0x24349087789b73af:0x3128d9ec44f6ed48!8m2!3d49.6004155!4d6.1134031!15sCjhJTjpDVUJBVE9SIDQwLCBCb3VsZXZhcmQgUGllcnJlIER1cG9uZyBMLTE0MzAgTHV4ZW1ib3VyZ1o5IjdpbiBjdWJhdG9yIDQwIGJvdWxldmFyZCBwaWVycmUgZHVwb25nIGwgMTQzMCBsdXhlbWJvdXJnkgEPY293b3JraW5nX3NwYWNlmgEkQ2hkRFNVaE5NRzluUzBWT2FWWTRkVlJZYzB4RE1tcEJSUkFC4AEA-gEECAAQPQ!16s%2Fg%2F11q2tc2t2w?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=4d047149-7dc2-4b88-8cb3-b753eab0ae95"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
@@ -229,10 +258,10 @@ export default function ContactPage() {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-gray-600 mb-2">
-                  <strong>Address:</strong> 18 rue de Nicolas Meyers, Bascharage, Luxembourg 4918
+                  <strong>Address:</strong> IN:CUBATOR 40, Boulevard Pierre Dupong L-1430 Luxembourg
                 </p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=18+rue+de+Nicolas+Meyers+Bascharage+Luxembourg+4918"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
@@ -304,10 +333,10 @@ export default function ContactPage() {
                 Our team is here to help. Don't hesitate to reach out-we're always happy to chat about how we can support your educational journey or partnership goals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:info@wesluxembourg.org" className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                <a href="mailto:info@weslux.lu" className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
                   Email Us
                 </a>
-                <a href="tel:+352123456789" className="px-8 py-3 border-2 border-blue-500 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300">
+                <a href="tel:+352621688991" className="px-8 py-3 border-2 border-blue-500 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300">
                   Call Us
                 </a>
               </div>

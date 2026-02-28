@@ -89,7 +89,7 @@ export default function TechConnectPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Program Features</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 <div className="bg-white p-6 rounded-xl shadow-md text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -112,6 +112,18 @@ export default function TechConnectPage() {
                   <h3 className="text-lg font-bold text-gray-900 mb-2">Networking</h3>
                   <p className="text-gray-600 text-sm">
                     Build connections with global tech professionals.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-md text-center">
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Hands on workshop</h3>
+                  <p className="text-gray-600 text-sm">
+                    write it!!!.
                   </p>
                 </div>
 
@@ -192,7 +204,7 @@ export default function TechConnectPage() {
                 Join Global Tech Connect and expand your horizons in the world of technology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/volunteer" className="px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                <Link href="/join-us/volunteer" className="px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-medium rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-md hover:shadow-lg">
                   Join Now
                 </Link>
                 <Link href="/news" className="px-8 py-3 border-2 border-green-500 text-green-600 font-medium rounded-lg hover:bg-green-50 transition-all duration-300">

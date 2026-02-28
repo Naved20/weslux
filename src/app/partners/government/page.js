@@ -18,7 +18,7 @@ export default function GovernmentPage() {
               Government Organizations
             </h1>
             <p className="text-xl text-gray-600">
-              Collaborate with us to advance national education and workforce development goals
+              Collaborate with us to advance globle education and workforce development goals
             </p>
           </div>
 
@@ -26,7 +26,7 @@ export default function GovernmentPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Why Partner With Us?</h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                We work closely with government organizations to align our programs with national education 
+                We work closely with government organizations to align our programs with globle education 
                 policies and workforce development strategies. Our partnerships help bridge the skills gap 
                 and support economic growth.
               </p>
@@ -46,7 +46,7 @@ export default function GovernmentPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Policy Alignment</h3>
               <p className="text-gray-600">
-                Our programs align with national education and workforce development policies and strategies.
+                Our programs align with globle education and workforce development policies and strategies.
               </p>
             </div>
 
@@ -70,7 +70,7 @@ export default function GovernmentPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Workforce Development</h3>
               <p className="text-gray-600">
-                Support national workforce development initiatives by preparing students for in-demand careers.
+                Support global workforce development initiatives by preparing students for in-demand careers.
               </p>
             </div>
 

@@ -18,7 +18,7 @@ export default function CSOPage() {
               Social & Civil Society Organizations
             </h1>
             <p className="text-xl text-gray-600">
-              Join forces to create lasting social impact through education
+              Join forces to create lasting social impact through education and community engagement
             </p>
           </div>
 

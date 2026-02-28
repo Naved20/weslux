@@ -48,7 +48,7 @@ export default function SupportPage() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg text-center">
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-blue-600">€50</span>
+                    <span className="text-xl font-bold text-blue-600">€50+</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Sponsor a Student</h3>
                   <p className="text-gray-600">
@@ -58,7 +58,7 @@ export default function SupportPage() {
 
                 <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg text-center">
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-green-600">€150</span>
+                    <span className="text-xl font-bold text-green-600">€150+</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Fund a Workshop</h3>
                   <p className="text-gray-600">
@@ -68,7 +68,7 @@ export default function SupportPage() {
 
                 <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl shadow-lg text-center">
                   <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-purple-600">€500</span>
+                    <span className="text-xl font-bold text-purple-600">€500+</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Support a Program</h3>
                   <p className="text-gray-600">
@@ -85,8 +85,8 @@ export default function SupportPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Ways to Support</h2>
-              <div className="space-y-6">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="flex items-start gap-6">
                     <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +105,7 @@ export default function SupportPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="flex items-start gap-6">
                     <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ export default function SupportPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="flex items-start gap-6">
                     <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,7 +143,7 @@ export default function SupportPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="flex items-start gap-6">
                     <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -293,7 +293,7 @@ export default function SupportPage() {
                   <p className="text-gray-600 mb-4">
                     Share your time and expertise as a mentor, speaker, or workshop facilitator.
                   </p>
-                  <a href="/volunteer" className="text-blue-600 font-semibold hover:text-blue-700">
+                  <a href="/join-us/volunteer" className="text-blue-600 font-semibold hover:text-blue-700">
                     Learn More →
                   </a>
                 </div>

@@ -99,56 +99,7 @@ export default function ProgramDetails() {
           </Link>
         </div>
 
-        {/* Mentorship Types */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-4">Anchor Mentorship</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Long term for 12 months</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>About 20 meetings</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Focused on special remedial support</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-4">Special Mentorship</h3>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Short term for 3-11 months</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>meetings depends on months</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Focused on career development guidance</span>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

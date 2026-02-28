@@ -49,8 +49,8 @@ export default function IndustrialVisitPage() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2">Company Tours</h3>
-                        <p className="text-gray-600 text-sm">Visit leading companies and see operations firsthand.</p>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2">Industry Tours</h3>
+                        <p className="text-gray-600 text-sm">Visit leading companies and see operations first hand.</p>
                       </div>
                     </div>
 
@@ -253,7 +253,7 @@ export default function IndustrialVisitPage() {
                 Join our Industrial Exposure Visit program and bridge the gap between theory and practice.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/news" className="px-8 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                <Link href="/contact" className="px-8 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg">
                   Register Now
                 </Link>
                 <Link href="/news" className="px-8 py-3 border-2 border-purple-500 text-purple-600 font-medium rounded-lg hover:bg-purple-50 transition-all duration-300">

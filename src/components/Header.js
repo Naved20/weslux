@@ -8,17 +8,23 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileProgramOpen, setMobileProgramOpen] = useState(false);
   const [mobilePartnersOpen, setMobilePartnersOpen] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileJoinUsOpen, setMobileJoinUsOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     setMobileProgramOpen(false);
     setMobilePartnersOpen(false);
+    setMobileAboutOpen(false);
+    setMobileJoinUsOpen(false);
   };
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
     setMobileProgramOpen(false);
     setMobilePartnersOpen(false);
+    setMobileAboutOpen(false);
+    setMobileJoinUsOpen(false);
   };
 
   const toggleMobileProgram = () => {
@@ -51,7 +57,7 @@ export default function Header() {
               <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">
                 WES
               </h1>
-              <p className="text-[10px] font-medium text-gray-500 leading-tight">WES Luxembourg for Education</p>
+              <p className="text-[10px] font-medium text-gray-500 leading-tight">Luxembourg for Education</p>
             </div>
           </div>
           
@@ -64,12 +70,94 @@ export default function Header() {
               </span>
             </Link>
             
-            <Link href="/about" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
-              <span className="relative">
-                About Us
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-              </span>
-            </Link>
+            {/* About Dropdown */}
+            <div className="relative group">
+              <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 flex items-center space-x-1">
+                <span>About Us</span>
+                <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              
+              <div className="absolute left-0 top-full mt-1 hidden group-hover:block bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn">
+                <div className="px-4 py-2 border-b border-gray-100">
+                  <h3 className="text-sm font-bold text-gray-900">About WES</h3>
+                  <p className="text-xs text-gray-500 mt-0.5">Learn more about our organization</p>
+                </div>
+                
+                <div className="py-2">
+                  <Link href="/about" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-blue-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-blue-600">1</span>
+                    </div>
+                    <span>Overview</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/about/vision-mission" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-green-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-green-600">2</span>
+                    </div>
+                    <span>Vision & Mission</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/about/who-we-are" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-purple-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-purple-600">3</span>
+                    </div>
+                    <span>Who We Are</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/about/our-story" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-orange-600">4</span>
+                    </div>
+                    <span>Our Story</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/about/our-team" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-red-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-red-600">5</span>
+                    </div>
+                    <span>Our Team</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/about/our-donors" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-indigo-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-indigo-600">6</span>
+                    </div>
+                    <span>Our Donors</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/about/complaints-reports" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-gray-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-gray-600">7</span>
+                    </div>
+                    <span>Complaints & Reports</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
             
             {/* Program Dropdown */}
             <div className="relative group">
@@ -193,12 +281,64 @@ export default function Header() {
               </span>
             </Link>
             
-            <Link href="/volunteer" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
-              <span className="relative">
-                Become a Volunteer
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-              </span>
-            </Link>
+            {/* Join Us Dropdown */}
+            <div className="relative group">
+              <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 flex items-center space-x-1">
+                <span>Join Us</span>
+                <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              
+              <div className="absolute left-0 top-full mt-1 hidden group-hover:block bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn">
+                <div className="px-4 py-2 border-b border-gray-100">
+                  <h3 className="text-sm font-bold text-gray-900">Join Our Community</h3>
+                  <p className="text-xs text-gray-500 mt-0.5">Get involved with WES</p>
+                </div>
+                
+                <div className="py-2">
+                  <Link href="/join-us/become-ambassador" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-blue-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-blue-600">1</span>
+                    </div>
+                    <span>Become an Ambassador</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/join-us/volunteer" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-green-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-green-600">2</span>
+                    </div>
+                    <span>Become a Volunteer</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/join-us/find-internship" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-purple-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-purple-600">3</span>
+                    </div>
+                    <span>Find Internship</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                  
+                  <Link href="/join-us/find-job" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                    <div className="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center mr-3">
+                      <span className="text-xs font-bold text-orange-600">4</span>
+                    </div>
+                    <span>Find Job</span>
+                    <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
             
             <Link href="/contact" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 group">
               <span className="relative">
@@ -215,7 +355,7 @@ export default function Header() {
             </Link>
             
             <a href="https://mentorship.weslux.lu" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border-2 border-blue-500 text-blue-600 font-medium text-sm rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300 whitespace-nowrap">
-              Mentorship App
+              Mentor Connect App
             </a>
           </div>
             
@@ -235,7 +375,50 @@ export default function Header() {
           <div className="lg:hidden mt-4 bg-white border border-gray-200 rounded-lg shadow-lg p-4 animate-fadeIn">
             <div className="space-y-2">
               <Link href="/" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Home</Link>
-              <Link href="/about" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">About Us</Link>
+              
+              {/* Mobile About Dropdown */}
+              <div>
+                <button 
+                  onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
+                  className="w-full flex items-center justify-between px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
+                >
+                  <span>About Us</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileAboutOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                
+                {mobileAboutOpen && (
+                  <div className="mt-2 ml-4 space-y-1 border-l-2 border-blue-100 pl-4">
+                    <Link href="/about" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Overview
+                    </Link>
+                    <Link href="/about/vision-mission" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Vision & Mission
+                    </Link>
+                    <Link href="/about/who-we-are" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Who We Are
+                    </Link>
+                    <Link href="/about/our-story" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Our Story
+                    </Link>
+                    <Link href="/about/our-team" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Our Team
+                    </Link>
+                    <Link href="/about/our-donors" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Our Donors
+                    </Link>
+                    <Link href="/about/complaints-reports" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Complaints & Reports
+                    </Link>
+                  </div>
+                )}
+              </div>
               
               {/* Mobile Program Dropdown */}
               <div>
@@ -306,7 +489,42 @@ export default function Header() {
               
               <Link href="/impact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Our Impact</Link>
               <Link href="/news" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">News & Events</Link>
-              <Link href="/volunteer" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Become a Volunteer</Link>
+              
+              {/* Mobile Join Us Dropdown */}
+              <div>
+                <button 
+                  onClick={() => setMobileJoinUsOpen(!mobileJoinUsOpen)}
+                  className="w-full flex items-center justify-between px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
+                >
+                  <span>Join Us</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileJoinUsOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                
+                {mobileJoinUsOpen && (
+                  <div className="mt-2 ml-4 space-y-1 border-l-2 border-blue-100 pl-4">
+                    <Link href="/join-us/become-ambassador" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Become an Ambassador
+                    </Link>
+                    <Link href="/join-us/volunteer" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Become a Volunteer
+                    </Link>
+                    <Link href="/join-us/find-internship" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Find Internship
+                    </Link>
+                    <Link href="/join-us/find-job" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                      Find Job
+                    </Link>
+                  </div>
+                )}
+              </div>
+              
               <Link href="/contact" onClick={closeMobileMenu} className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">Contact</Link>
               
               {/* Mobile CTA Buttons */}
