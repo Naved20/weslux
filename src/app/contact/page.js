@@ -245,7 +245,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Find Us</h2>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.co.in/maps/place/IN:CUBATOR/@49.6062112,6.069792,13.36z/data=!4m7!3m6!1s0x24349087789b73af:0x3128d9ec44f6ed48!8m2!3d49.6004155!4d6.1134031!15sCjhJTjpDVUJBVE9SIDQwLCBCb3VsZXZhcmQgUGllcnJlIER1cG9uZyBMLTE0MzAgTHV4ZW1ib3VyZ1o5IjdpbiBjdWJhdG9yIDQwIGJvdWxldmFyZCBwaWVycmUgZHVwb25nIGwgMTQzMCBsdXhlbWJvdXJnkgEPY293b3JraW5nX3NwYWNlmgEkQ2hkRFNVaE5NRzluUzBWT2FWWTRkVlJZYzB4RE1tcEJSUkFC4AEA-gEECAAQPQ!16s%2Fg%2F11q2tc2t2w?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=4d047149-7dc2-4b88-8cb3-b753eab0ae95"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5400.6734740185575!2d6.10387589357911!3d49.60041549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24349087789b73af%3A0x3128d9ec44f6ed48!2sIN%3ACUBATOR!5e1!3m2!1sen!2sin!4v1772321212564!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
@@ -261,7 +261,7 @@ export default function ContactPage() {
                   <strong>Address:</strong> IN:CUBATOR 40, Boulevard Pierre Dupong L-1430 Luxembourg
                 </p>
                 <a
-                  href=""
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5400.6734740185575!2d6.10387589357911!3d49.60041549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24349087789b73af%3A0x3128d9ec44f6ed48!2sIN%3ACUBATOR!5e1!3m2!1sen!2sin!4v1772321212564!5m2!1sen!2sin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
