@@ -150,7 +150,7 @@ export default function Header() {
                     <div className="w-6 h-6 rounded-md bg-gray-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-gray-600">7</span>
                     </div>
-                    <span>Complaints & Reports</span>
+                    <span>Compliance & Reports</span>
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -414,7 +414,7 @@ export default function Header() {
                       Our Donors
                     </Link>
                     <Link href="/about/complaints-reports" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
-                      Complaints & Reports
+                      Compliance & Reports
                     </Link>
                   </div>
                 )}
