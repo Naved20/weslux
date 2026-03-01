@@ -1,7 +1,6 @@
 'use client';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components';
 
 export default function VolunteerPage() {
   const scrollToForm = () => {

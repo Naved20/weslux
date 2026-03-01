@@ -61,9 +61,9 @@ export default function Partners() {
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Government & Social Organizations</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">For Governments</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Public sector and social organization partnerships for community development and education.
+                Public sector and government organization partnerships for community development and education.
               </p>
               <div className="mt-6 text-purple-600 font-semibold text-sm flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Learn more
@@ -81,7 +81,7 @@ export default function Partners() {
                   <span className="text-white font-bold text-xl">4</span>
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Civil Society Organizations</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">For Civil Society Organizations</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Non-profit and community organization collaborations for social impact and educational outreach.
               </p>

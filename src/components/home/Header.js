@@ -248,7 +248,7 @@ export default function Header() {
                     <div className="w-6 h-6 rounded-md bg-purple-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-purple-600">3</span>
                     </div>
-                    <span>Government Organizations</span>
+                    <span>Governments</span>
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -258,7 +258,7 @@ export default function Header() {
                     <div className="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-orange-600">4</span>
                     </div>
-                    <span>Social & Civil Society Organizations</span>
+                    <span>Civil Society Organizations</span>
                     <svg className="w-4 h-4 ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                     </svg>
@@ -478,10 +478,10 @@ export default function Header() {
                       Companies
                     </Link>
                     <Link href="/partners/government" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
-                      Government Organizations
+                      Government
                     </Link>
                     <Link href="/partners/cso" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
-                      Social & Civil Society Organizations
+                      Civil Society Organizations
                     </Link>
                   </div>
                 )}

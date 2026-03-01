@@ -1,5 +1,4 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components';
 
 export default function ContactPage() {
   return (
@@ -93,7 +92,7 @@ export default function ContactPage() {
 
                     <div>
                       <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
-                        programs *
+                        Programs *
                       </label>
                       <select
                         id="subject"
@@ -102,9 +101,10 @@ export default function ContactPage() {
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
                         <option value="">Select a program</option>
-                        <option value="general">mentorship</option>
-                        <option value="partnership">global tech connect</option>
-                        <option value="mentorship">industrial Exposure visit</option>
+                        <option value="general">Mentorship</option>
+                        <option value="partnership">Global Tech Connect</option>
+                        <option value="mentorship">Industrial Exposure visit</option>
+                        <option value="mentorship">Other</option>
 
                       </select>
                     </div>

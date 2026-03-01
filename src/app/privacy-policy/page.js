@@ -1,5 +1,4 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components';
 
 export default function PrivacyPolicyPage() {
   return (
@@ -116,12 +115,62 @@ export default function PrivacyPolicyPage() {
                     <li>The right to withdraw consent</li>
                   </ul>
                   <p className="text-gray-600">
-                    To exercise these rights, please contact us at privacy@weslux.lu.
+                    To exercise these rights, please contact us at info@weslux.lu.
                   </p>
                 </div>
 
                 <div className="mb-12">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Cookies and Tracking Technologies</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">7. GDPR Compliance</h2>
+                  <p className="text-gray-600 mb-4">
+                    WES Luxembourg for Education complies with the General Data Protection Regulation (GDPR) (EU) 2016/679, which provides data protection and privacy for individuals within the European Union and the European Economic Area.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Legal Basis for Processing</h3>
+                  <p className="text-gray-600 mb-4">
+                    We process personal data based on one or more of the following legal grounds:
+                  </p>
+                  <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                    <li><strong>Consent:</strong> You have given clear consent for us to process your personal data for a specific purpose</li>
+                    <li><strong>Contract:</strong> Processing is necessary for the performance of a contract with you or to take steps at your request before entering into a contract</li>
+                    <li><strong>Legal obligation:</strong> Processing is necessary for compliance with a legal obligation to which we are subject</li>
+                    <li><strong>Legitimate interests:</strong> Processing is necessary for our legitimate interests or the legitimate interests of a third party, unless there is a good reason to protect your personal data which overrides those legitimate interests</li>
+                  </ul>
+
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Data Protection Officer</h3>
+                  <p className="text-gray-600 mb-4">
+                    We have appointed a Data Protection Officer (DPO) to oversee compliance with this privacy policy and GDPR requirements. You can contact our DPO at:
+                  </p>
+                  <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                    <p className="text-gray-600 mb-2">
+                      <strong>Data Protection Officer:</strong> WES Luxembourg for Education
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                      <strong>Email:</strong> info@weslux.lu
+                    </p>
+                    <p className="text-gray-600">
+                      <strong>Address:</strong> 18, Rue Nicolas Meyers, L-4918 Bascharage, Luxembourg
+                    </p>
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">International Data Transfers</h3>
+                  <p className="text-gray-600 mb-4">
+                    As an organization operating in Luxembourg with international programs, we may transfer personal data to countries outside the European Economic Area (EEA). When we do so, we ensure appropriate safeguards are in place, such as:
+                  </p>
+                  <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                    <li>Adequacy decisions by the European Commission</li>
+                    <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
+                    <li>Binding Corporate Rules (BCRs)</li>
+                    <li>Other legally approved transfer mechanisms</li>
+                  </ul>
+
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Data Breach Notification</h3>
+                  <p className="text-gray-600">
+                    In the event of a personal data breach, we will notify the relevant supervisory authority without undue delay and, where feasible, within 72 hours of becoming aware of the breach, unless the breach is unlikely to result in a risk to the rights and freedoms of individuals. If the breach is likely to result in a high risk to individuals' rights and freedoms, we will also notify affected individuals without undue delay.
+                  </p>
+                </div>
+
+                <div className="mb-12">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Cookies and Tracking Technologies</h2>
                   <p className="text-gray-600 mb-4">
                     We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier.
                   </p>

@@ -1,67 +1,67 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+"use client";
+import { Header, Footer } from '@/components';
 import Image from 'next/image';
 
 export default function OurTeamPage() {
   const foundingTeam = [
     {
-      name: "Dr. Sarah Johnson",
-      role: "Founder & Executive Director",
-      bio: "Education specialist with 15+ years experience in educational reform and student development. PhD in Educational Leadership from University of Luxembourg.",
-      image: "/team/sarah-johnson.jpg",
-      initials: "SJ"
+      name: "Mohmmad Arif",
+      role: "Founder & President",
+      bio: "Founder of WES Luxembourg for Education with extensive experience in the financial industry. Passionate about providing quality education to disadvantaged communities and bridging educational gaps.",
+      image: "/team/Founding Team/arif.png",
+      initials: "MA"
     },
     {
-      name: "Michael Chen",
-      role: "Co-Founder & Program Director",
-      bio: "Former tech industry leader with 12+ years at Google. Passionate about connecting students with industry opportunities and digital transformation.",
-      image: "/team/michael-chen.jpg",
-      initials: "MC"
+      name: "Rohit Pandey",
+      role: "Co-Founder & Administrator",
+      bio: "Technology professional with expertise in IT systems and digital transformation. Committed to leveraging technology for educational advancement and mentorship programs.",
+      image: "/team/Founding Team/Rohit.png",
+      initials: "RP"
     },
     {
-      name: "Priya Sharma",
-      role: "Co-Founder & Partnership Director",
-      bio: "Expert in building strategic relationships with educational institutions and corporate partners across Europe and Asia.",
-      image: "/team/priya-sharma.jpg",
-      initials: "PS"
+      name: "Keshar Singh",
+      role: "Co-Founder & Administrator",
+      bio: "Financial industry professional dedicated to nonprofit management and educational initiatives. Focuses on sustainable development and community empowerment through education.",
+      image: "/team/Founding Team/Keshar.png",
+      initials: "KS"
     }
   ];
 
   const boardOfGovernance = [
     {
+      name: "Isabel Rabadan Mosseray",
+      role: "Business Development Director",
+      bio: "Business development professional with international experience. Focuses on strategic partnerships, organizational growth, and international collaboration.",
+      image: "/team/isabel-raba.jpg",
+      initials: "IR"
+    },
+    {
       name: "Prof. Elena Rodriguez",
-      role: "Chairperson",
-      bio: "Professor of Education Policy at University of Luxembourg. Former Minister of Education for Luxembourg.",
+      role: "Education Policy Advisor",
+      bio: "Professor of Education Policy at University of Luxembourg. Provides guidance on educational frameworks and international standards.",
       image: "/team/elena-rodriguez.jpg",
       initials: "ER"
     },
     {
       name: "Thomas Schmidt",
-      role: "Vice Chairperson",
-      bio: "CEO of European Tech Council. Advocate for STEM education and industry-academia collaboration.",
+      role: "Technology & Innovation Advisor",
+      bio: "CEO of European Tech Council. Advises on STEM education initiatives and industry-academia collaboration strategies.",
       image: "/team/thomas-schmidt.jpg",
       initials: "TS"
     },
     {
       name: "Dr. Fatima Al-Mansoori",
-      role: "Secretary",
-      bio: "Director at UNESCO Education Division. Expert in international education policy and sustainable development.",
+      role: "International Development Advisor",
+      bio: "Director at UNESCO Education Division. Expert in international education policy and sustainable development goals.",
       image: "/team/fatima-al-mansoori.jpg",
       initials: "FA"
     },
     {
       name: "James Wilson",
-      role: "Treasurer",
-      bio: "Former CFO of major European bank. Specializes in nonprofit financial management and sustainability.",
+      role: "Financial Governance Advisor",
+      bio: "Former CFO of major European bank. Specializes in nonprofit financial management, compliance, and sustainability.",
       image: "/team/james-wilson.jpg",
       initials: "JW"
-    },
-    {
-      name: "David Müller",
-      role: "Member",
-      bio: "Head of Corporate Social Responsibility at Siemens. Focus on corporate-education partnerships.",
-      image: "/team/david-muller.jpg",
-      initials: "DM"
     }
   ];
 
@@ -176,8 +176,19 @@ export default function OurTeamPage() {
                     <div className="p-6">
                       <div className="flex flex-col items-center text-center">
                         <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-50 rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                          {/* Placeholder for image - in real implementation, use Image component */}
-                          <div className="w-full h-full bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={128}
+                            height={128}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              const fallback = e.target.parentNode.querySelector('.image-fallback');
+                              if (fallback) fallback.style.display = 'flex';
+                            }}
+                          />
+                          <div className="image-fallback w-full h-full bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center" style={{ display: 'none' }}>
                             <span className="text-3xl font-bold text-white">{member.initials}</span>
                           </div>
                         </div>
@@ -209,8 +220,19 @@ export default function OurTeamPage() {
                     <div className="p-6">
                       <div className="flex flex-col items-center text-center">
                         <div className="w-24 h-24 bg-gradient-to-br from-green-100 to-green-50 rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                          {/* Placeholder for image */}
-                          <div className="w-full h-full bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={96}
+                            height={96}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              const fallback = e.target.parentNode.querySelector('.image-fallback');
+                              if (fallback) fallback.style.display = 'flex';
+                            }}
+                          />
+                          <div className="image-fallback w-full h-full bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center" style={{ display: 'none' }}>
                             <span className="text-2xl font-bold text-white">{member.initials}</span>
                           </div>
                         </div>

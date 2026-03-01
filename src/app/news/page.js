@@ -1,5 +1,4 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components';
 
 export default function NewsPage() {
   return (
@@ -277,6 +276,128 @@ export default function NewsPage() {
           </div>
         </section>
 
+        {/* Past Events */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-12">Past Events</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                  </div>
+                  <div className="p-6">
+                    <div className="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs font-semibold mb-3">
+                      Workshop
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      AI in Education Workshop
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Explored how artificial intelligence is transforming education and career development for students worldwide.
+                    </p>
+                    <div className="flex items-center text-xs text-gray-500 mb-4">
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      January 20, 2026
+                    </div>
+                    <button className="text-indigo-600 font-semibold text-sm hover:text-indigo-700">
+                      View Photos →
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <div className="p-6">
+                    <div className="inline-block px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-xs font-semibold mb-3">
+                      Networking
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      Annual Alumni Meetup
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Reconnected with former students and mentors to celebrate achievements and share success stories from their careers.
+                    </p>
+                    <div className="flex items-center text-xs text-gray-500 mb-4">
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      December 15, 2025
+                    </div>
+                    <button className="text-teal-600 font-semibold text-sm hover:text-teal-700">
+                      View Photos →
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="h-48 bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                  </div>
+                  <div className="p-6">
+                    <div className="inline-block px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-xs font-semibold mb-3">
+                      Career Fair
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      Virtual Career Fair 2025
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Connected students with 50+ companies offering internships and job opportunities across various industries.
+                    </p>
+                    <div className="flex items-center text-xs text-gray-500 mb-4">
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      November 10, 2025
+                    </div>
+                    <button className="text-rose-600 font-semibold text-sm hover:text-rose-700">
+                      View Photos →
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="h-48 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                  </div>
+                  <div className="p-6">
+                    <div className="inline-block px-3 py-1 bg-amber-100 text-amber-600 rounded-full text-xs font-semibold mb-3">
+                      Training
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      Mentor Training Program
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Equipped new mentors with essential skills and strategies to effectively guide and support students in their journeys.
+                    </p>
+                    <div className="flex items-center text-xs text-gray-500 mb-4">
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      October 5, 2025
+                    </div>
+                    <button className="text-amber-600 font-semibold text-sm hover:text-amber-700">
+                      View Photos →
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Newsletter Signup */}
         <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
           <div className="container mx-auto px-4">
@@ -287,7 +408,7 @@ export default function NewsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Stay Updated (add here past events--)</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
                 <p className="text-gray-600 mb-8">
                   Subscribe to our newsletter to receive the latest news, event announcements, and success stories directly in your inbox.
                 </p>

@@ -1,5 +1,4 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components';
 import Link from 'next/link';
 
 export default function CSOPage() {
@@ -15,7 +14,7 @@ export default function CSOPage() {
               <span className="text-orange-600 font-semibold text-sm">Partner Category 4</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Social & Civil Society Organizations
+              Civil Society Organizations
             </h1>
             <p className="text-xl text-gray-600">
               Join forces to create lasting social impact through education and community engagement

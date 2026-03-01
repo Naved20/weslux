@@ -1,5 +1,4 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components';
 
 export default function OurDonorsPage() {
   const majorDonors = [
@@ -245,6 +244,111 @@ export default function OurDonorsPage() {
                 <p className="text-gray-600 leading-relaxed">
                   We recognize our donors through various channels, including our annual report, website recognition, and special appreciation events. However, we also respect donor privacy and offer anonymous giving options for those who prefer them.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Official Documents */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Official Documents & Agreements</h2>
+              
+              {/* Funding Agreement Details */}
+              <div className="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-2xl shadow-lg mb-8">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">2025 Partial Agreement - CRE</h3>
+                    <p className="text-gray-600 mb-4">
+                      Official partial agreement document between WES Luxembourg for Education and relevant authorities, outlining funding arrangements and program implementation details for the year 2025.
+                    </p>
+                    <div className="flex items-center text-sm text-gray-500 mb-4">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      Document Date: 2025
+                    </div>
+                    <a 
+                      href="/doner/2025AID201%20WES%20Luxembourg%20for%20Education%20(accord%20partiel%20-%20CRE).pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      View PDF Document
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Agreement Summary */}
+              <div className="bg-white border border-gray-200 rounded-2xl shadow-lg p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Funding Agreement Summary</h3>
+                
+                <div className="space-y-6">
+                  <div className="bg-blue-50 p-6 rounded-xl">
+                    <h4 className="text-lg font-bold text-gray-900 mb-3">Grant Approval</h4>
+                    <p className="text-gray-600">
+                      The National Relief Fund (Œuvre Nationale de Secours Grande-Duchesse Charlotte) has approved partial financial support of <strong>€22,000</strong> (twenty-two thousand euros) for the "Mentorship Program - WES Lux Career Guidance Program".
+                    </p>
+                  </div>
+
+                  <div className="bg-purple-50 p-6 rounded-xl">
+                    <h4 className="text-lg font-bold text-gray-900 mb-3">Key Conditions</h4>
+                    <ul className="space-y-3 text-gray-600">
+                      <li className="flex items-start">
+                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                          <span className="text-sm font-bold text-purple-600">1</span>
+                        </div>
+                        <span>Funds must be used exclusively for the approved project activities</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                          <span className="text-sm font-bold text-purple-600">2</span>
+                        </div>
+                        <span>A final project report with financial accounting must be submitted within 6 weeks after August 30, 2027</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                          <span className="text-sm font-bold text-purple-600">3</span>
+                        </div>
+                        <span>The National Relief Fund logo must be displayed on all project-related communication materials</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                          <span className="text-sm font-bold text-purple-600">4</span>
+                        </div>
+                        <span>Project documentation (photos/videos) must be provided for communication purposes</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h4 className="text-lg font-bold text-gray-900 mb-3">Project Timeline</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-blue-600 mb-1">Dec 2025</div>
+                        <div className="text-sm text-gray-600">Grant Approval</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-green-600 mb-1">2025-2027</div>
+                        <div className="text-sm text-gray-600">Project Implementation</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-purple-600 mb-1">Oct 2027</div>
+                        <div className="text-sm text-gray-600">Final Report Due</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
