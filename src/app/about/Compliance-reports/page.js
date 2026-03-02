@@ -14,7 +14,7 @@ export default function LegalComplianceReportsPage() {
                 Legal Compliance & <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Reports</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our formal process for addressing legal grievances and maintaining regulatory compliance.
+                Comprehensive framework for legal compliance, regulatory adherence, and formal grievance resolution processes.
               </p>
             </div>
           </div>
@@ -24,67 +24,28 @@ export default function LegalComplianceReportsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Legal Compliance Framework</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Legal Compliance & Grievance Resolution Framework</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                At WES Luxembourg for Education, we maintain rigorous legal compliance standards and provide formal channels for legal grievances. We take all legal Compliance seriously and ensure proper investigation and resolution in accordance with applicable laws and regulations.
+                WES Luxembourg for Education operates under a comprehensive legal compliance framework that ensures adherence to all applicable laws, regulations, and ethical standards. We maintain formal procedures for addressing legal concerns and provide structured channels for grievance resolution in accordance with Luxembourg's legal requirements and international best practices.
               </p>
               <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl shadow-lg">
                 <p className="text-gray-700 italic text-lg">
-                  "We uphold the highest standards of legal compliance and provide transparent processes for addressing formal legal grievances."
+                  "Our organization is committed to maintaining the highest standards of legal integrity, regulatory compliance, and transparent grievance resolution processes."
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* How to Submit a Legal Compliance */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">How to Submit a Legal Compliance or Report</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="text-2xl font-bold text-blue-600">1</div>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Document the Legal Issue</h3>
-                  <p className="text-gray-600">
-                    Provide detailed documentation including dates, parties involved, specific legal concerns, and any supporting evidence.
-                  </p>
-                </div>
-
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="text-2xl font-bold text-green-600">2</div>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Submit Formal Grievance</h3>
-                  <p className="text-gray-600">
-                    Use our formal legal Compliance channels to submit your grievance with proper documentation and legal basis.
-                  </p>
-                </div>
-
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="text-2xl font-bold text-purple-600">3</div>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Receive Legal Response</h3>
-                  <p className="text-gray-600">
-                    We will acknowledge your legal Compliance within 48 hours and provide updates on our formal investigation process.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Types of Legal Concerns */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Types of Legal Concerns We Address</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Compliance Reporting Categories</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-lg">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">Regulatory & Compliance Issues</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">Annual Compliance Reports</h3>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
                       <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +69,7 @@ export default function LegalComplianceReportsPage() {
                 </div>
 
                 <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-lg">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">Governance & Ethical Issues</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">Financial Reports</h3>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start">
                       <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -328,68 +289,9 @@ export default function LegalComplianceReportsPage() {
           </div>
         </section>
 
-        {/* Legal Confidentiality & Protection */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Legal Confidentiality & Whistleblower Protection</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                We treat all legal Compliance with strict attorney-client confidentiality where applicable. Individuals who submit legal Compliance in good faith are protected from retaliation under whistleblower protection laws. Anonymous legal Compliance are accepted, though they may limit our ability to conduct thorough legal investigations.
-              </p>
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <p className="text-gray-700 italic text-lg">
-                  "Our commitment to legal compliance is matched by our commitment to protecting those who report legal concerns in good faith."
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Legal Compliance Reports */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Legal Compliance & Transparency Reports</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Legal Compliance Reports</h3>
-                  <p className="text-gray-600">
-                    Comprehensive reports on our legal compliance activities and regulatory adherence.
-                  </p>
-                </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Legal Compliance Statistics</h3>
-                  <p className="text-gray-600">
-                    Annual summaries of legal Compliance received, types, and legal resolution outcomes.
-                  </p>
-                </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl shadow-lg text-center">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Legal Policy Updates</h3>
-                  <p className="text-gray-600">
-                    Documentation of legal policy changes made in response to legal feedback and compliance requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
       </main>

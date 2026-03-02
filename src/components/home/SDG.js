@@ -5,7 +5,7 @@ export default function SDG() {
     { 
       number: 4, 
       title: "Quality Education",
-      description: "Ensure inclusive and equitable quality education\nand promote lifelong learning opportunities\nfor all",
+      description: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
       color: "from-blue-500 to-blue-600"
     },
     { 
@@ -17,7 +17,7 @@ export default function SDG() {
     { 
       number: 8, 
       title: "Decent Work",
-      description: "Promote sustained, inclusive economic growth\nfull and productive employment\nand decent work for all",
+      description: "Promote sustained, inclusive economic growth full and productive employment and decent work for all",
       color: "from-red-500 to-red-600"
     },
     { 

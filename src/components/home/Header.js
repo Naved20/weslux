@@ -146,7 +146,7 @@ export default function Header() {
                     </svg>
                   </Link>
                   
-                  <Link href="/about/complaints-reports" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
+                  <Link href="/about/Compliance-reports" className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-150 group/item">
                     <div className="w-6 h-6 rounded-md bg-gray-100 flex items-center justify-center mr-3">
                       <span className="text-xs font-bold text-gray-600">7</span>
                     </div>
@@ -413,7 +413,7 @@ export default function Header() {
                     <Link href="/about/our-donors" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Our Donors
                     </Link>
-                    <Link href="/about/complaints-reports" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                    <Link href="/about/Compliance-reports" onClick={closeMobileMenu} className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
                       Compliance & Reports
                     </Link>
                   </div>
