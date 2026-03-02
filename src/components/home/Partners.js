@@ -100,20 +100,7 @@ export default function Partners() {
             Whether you're an educational institution, corporation, government agency, or non-profit organization, 
             we have partnership opportunities that align with your goals and create meaningful impact.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#contact" 
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Contact Us to Partner
-            </a>
-            <Link 
-              href="/support" 
-              className="px-8 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow"
-            >
-              Support Our Mission
-            </Link>
-          </div>
+
         </div>
       </div>
     </section>

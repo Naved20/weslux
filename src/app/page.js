@@ -3,6 +3,7 @@ import {
   Hero,
   About,
   ProgramDetails,
+  Impact,
   Partners,
   SDG,
   NewsEvents,
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <About />
       <ProgramDetails />
+      <Impact />
       <Partners />
       <SDG />
       <NewsEvents />

@@ -5,37 +5,37 @@ export default function SDG() {
     { 
       number: 4, 
       title: "Quality Education",
-      description: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+      description: "Ensure inclusive and equitable quality education\nand promote lifelong learning opportunities\nfor all",
       color: "from-blue-500 to-blue-600"
     },
     { 
       number: 5, 
       title: "Gender Equality",
-      description: "Achieve gender equality and empower all women and girls",
+      description: "Achieve gender equality and empower\nall women and girls through equal\nopportunities and representation",
       color: "from-yellow-500 to-yellow-600"
     },
     { 
       number: 8, 
       title: "Decent Work",
-      description: "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+      description: "Promote sustained, inclusive economic growth\nfull and productive employment\nand decent work for all",
       color: "from-red-500 to-red-600"
     },
     { 
       number: 9, 
       title: "Industry & Innovation",
-      description: "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+      description: "Build resilient infrastructure\npromote inclusive and sustainable\nindustrialization and foster innovation",
       color: "from-orange-500 to-orange-600"
     },
     { 
       number: 10, 
       title: "Reduced Inequalities",
-      description: "Reduce inequality within and among countries",
+      description: "Reduce inequality within\nand among countries through\ninclusive policies and opportunities",
       color: "from-purple-500 to-purple-600"
     },
     { 
       number: 17, 
       title: "Partnerships",
-      description: "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+      description: "Strengthen the means of implementation\nand revitalize the Global Partnership\nfor Sustainable Development",
       color: "from-green-500 to-green-600"
     }
   ];
@@ -86,7 +86,7 @@ export default function SDG() {
 
               {/* SDG Content */}
               <div className="p-6">
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 whitespace-pre-line">
                   {sdg.description}
                 </p>
                 
@@ -287,20 +287,7 @@ export default function SDG() {
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Join us in our mission to contribute to the Sustainable Development Goals and create a better future for all
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/impact" 
-              className="px-8 py-3 bg-gradient-to-r from-green-600 to-blue-600 text-white font-semibold rounded-lg hover:from-green-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Learn About Our Impact
-            </a>
-            <a 
-              href="/support" 
-              className="px-8 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-all duration-300 shadow-sm hover:shadow"
-            >
-              Support Our Mission
-            </a>
-          </div>
+
         </div>
       </div>
     </section>

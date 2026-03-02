@@ -12,6 +12,11 @@ export default function Footer() {
               <div>
                 <h3 className="text-xl font-bold">WES</h3>
                 <p className="text-sm text-gray-400">Luxembourg for Education</p>
+                <p className="text-sm text-gray-400 mt-1">
+                  Legal Form: Non-profit Association (ASBL)<br />
+                  RCS Number: F14791<br />
+                  Registration Date: February 14, 2025
+                </p>
               </div>
             </div>
 
@@ -36,7 +41,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>© 2025 WESLUX - WES Luxembourg for Education. All rights reserved.</p>
+          <p>© 2025 WESLUX - WES Luxembourg for Education ASBL. All rights reserved.</p>
         </div>
       </div>
     </footer>

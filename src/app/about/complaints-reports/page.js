@@ -391,31 +391,7 @@ export default function LegalComplianceReportsPage() {
           </div>
         </section>
 
-        {/* Legal Contact Information */}
-        <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Need to Report a Legal Concern?</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                We encourage you to bring any legal concerns to our attention. Your legal feedback helps us maintain the highest standards of legal compliance and regulatory adherence in all our operations.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/contact" 
-                  className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
-                >
-                  Submit a Legal Compliance
-                </a>
-                <a 
-                  href="/contact" 
-                  className="px-6 py-3 border-2 border-blue-500 text-blue-600 font-medium rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300"
-                >
-                  Request Legal Compliance Report
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </main>
 
       <Footer />
