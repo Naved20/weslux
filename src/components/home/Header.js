@@ -159,7 +159,11 @@ export default function Header() {
                 </svg>
               </button>
               
-              <div className={`absolute left-0 top-full mt-1 ${desktopAboutOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}>
+              <div 
+                className={`absolute left-0 top-full mt-1 ${desktopAboutOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}
+                onMouseEnter={handleDesktopAboutMouseEnter}
+                onMouseLeave={handleDesktopAboutMouseLeave}
+              >
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">About WES</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Learn more about our organization</p>
@@ -252,7 +256,11 @@ export default function Header() {
                 </svg>
               </button>
               
-              <div className={`absolute left-0 top-full mt-1 ${desktopProgramOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}>
+              <div 
+                className={`absolute left-0 top-full mt-1 ${desktopProgramOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}
+                onMouseEnter={handleDesktopProgramMouseEnter}
+                onMouseLeave={handleDesktopProgramMouseLeave}
+              >
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">Program Details</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Explore our programs</p>
@@ -305,7 +313,11 @@ export default function Header() {
                 </svg>
               </button>
               
-              <div className={`absolute left-0 top-full mt-1 ${desktopPartnersOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-72 z-50 animate-fadeIn`}>
+              <div 
+                className={`absolute left-0 top-full mt-1 ${desktopPartnersOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-72 z-50 animate-fadeIn`}
+                onMouseEnter={handleDesktopPartnersMouseEnter}
+                onMouseLeave={handleDesktopPartnersMouseLeave}
+              >
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">Partner Categories</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Collaborate with us</p>
@@ -382,7 +394,11 @@ export default function Header() {
                 </svg>
               </button>
               
-              <div className={`absolute left-0 top-full mt-1 ${desktopJoinUsOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}>
+              <div 
+                className={`absolute left-0 top-full mt-1 ${desktopJoinUsOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}
+                onMouseEnter={handleDesktopJoinUsMouseEnter}
+                onMouseLeave={handleDesktopJoinUsMouseLeave}
+              >
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">Join Our Community</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Get involved with WES</p>
