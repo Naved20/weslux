@@ -50,6 +50,7 @@ export default function Header() {
                   className="object-contain p-0.5"
                   sizes="40px"
                   priority
+                  quality={100}
                 />
               </div>
             </div>

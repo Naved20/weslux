@@ -62,70 +62,63 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right Column - Image */}
+          {/* Right Column - Stats & Visual */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 group">
-              {/* Main Image Container */}
-              <div className="aspect-[4/4] relative rounded-2xl overflow-hidden">
-                {/* Background Image */}
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/image.png')" }}
-                >
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-blue-600/15 to-purple-600/10 group-hover:from-green-600/25 group-hover:via-blue-600/20 group-hover:to-purple-600/15 transition-all duration-500"></div>
-                  
-                  {/* Content Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center p-8">
-                    <div className="text-center bg-white/90 backdrop-blur-sm rounded-2xl p-8 max-w-md transform group-hover:scale-105 transition-transform duration-500">
-                      <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
-                        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                        </svg>
-                      </div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Education Excellence in Luxembourg</h3>
-                      <p className="text-gray-600 mb-4">A vibrant hub connecting students with global opportunities</p>
-                      <div className="flex items-center justify-center space-x-6 mt-6">
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-green-600">50+</div>
-                          <div className="text-sm text-gray-600">Educational Institutions</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-blue-600">100+</div>
-                          <div className="text-sm text-gray-600">Global Companies</div>
-                        </div>
-                      </div>
-                    </div>
+            {/* Main Card */}
+            <div className="relative bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 rounded-3xl p-8 shadow-xl">
+              {/* Header Section */}
+              <div className="text-center mb-8">
+                <div className="w-32 h-32 mx-auto mb-6 bg-white rounded-3xl flex items-center justify-center shadow-2xl transform hover:rotate-6 transition-transform duration-300 p-3">
+                  <div className="w-full h-full relative">
+                    <Image 
+                      src="/image.png" 
+                      alt="WESLUX Logo" 
+                      width={104}
+                      height={104}
+                      className="object-contain w-full h-full"
+                      priority
+                      quality={100}
+                    />
                   </div>
                 </div>
+                <h3 className="text-3xl font-bold text-gray-900 mb-3">Education Excellence in Luxembourg</h3>
+                <p className="text-gray-600 text-lg">A vibrant hub connecting students with global opportunities</p>
               </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-green-400 to-blue-500 rounded-full opacity-20 blur-xl group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-20 blur-xl group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"></div>
-              
-              {/* Floating elements */}
-              <div className="absolute top-6 left-6 w-8 h-8 bg-white/20 rounded-full backdrop-blur-sm"></div>
-              <div className="absolute bottom-6 right-6 w-12 h-12 bg-white/15 rounded-full backdrop-blur-sm"></div>
+
+              {/* Stats Grid */}
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-2">50+</div>
+                  <div className="text-sm font-medium text-gray-600">Educational Institutions</div>
+                </div>
+                <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent mb-2">100+</div>
+                  <div className="text-sm font-medium text-gray-600">Global Companies</div>
+                </div>
+              </div>
+
+              {/* Additional Stats */}
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                  <div className="text-2xl font-bold text-green-600 mb-1">5,000+</div>
+                  <div className="text-xs text-gray-600">Students Reached</div>
+                </div>
+                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">100+</div>
+                  <div className="text-xs text-gray-600">Partner Schools</div>
+                </div>
+                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white hover:shadow-md transition-all duration-300">
+                  <div className="text-2xl font-bold text-purple-600 mb-1">50+</div>
+                  <div className="text-xs text-gray-600">Company Partners</div>
+                </div>
+              </div>
+
+              {/* Decorative circles */}
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-10 blur-2xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-10 blur-2xl"></div>
             </div>
-            
-            {/* Stats overlay */}
-            <div className="mt-8 grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="text-2xl font-bold text-green-600">5,000+</div>
-                <div className="text-sm text-gray-600">Students Reached</div>
-              </div>
-              <div className="text-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="text-2xl font-bold text-blue-600">100+</div>
-                <div className="text-sm text-gray-600">Partner Schools</div>
-              </div>
-              <div className="text-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="text-2xl font-bold text-purple-600">50+</div>
-                <div className="text-sm text-gray-600">Company Partners</div>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </div>

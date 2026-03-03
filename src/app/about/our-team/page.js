@@ -13,14 +13,14 @@ export default function OurTeamPage() {
     },
     {
       name: "Rohit Pandey",
-      role: "Co-Founder & Administrator",
+      role: "Vice President & Administrator",
       bio: "Technology professional with expertise in IT systems and digital transformation. Committed to leveraging technology for educational advancement and mentorship programs.",
       image: "/team/Founding Team/Rohit.png",
       initials: "RP"
     },
     {
       name: "Keshar Singh",
-      role: "Co-Founder & Administrator",
+      role: "Secretary & Administrator",
       bio: "Financial industry professional dedicated to nonprofit management and educational initiatives. Focuses on sustainable development and community empowerment through education.",
       image: "/team/Founding Team/Keshar.png",
       initials: "KS"
@@ -28,26 +28,13 @@ export default function OurTeamPage() {
   ];
 
   const boardOfGovernance = [
-    {
-      name: "Isabel Rabadan Mosseray",
-      role: "Business Development Director",
-      bio: "Business development professional with international experience. Focuses on strategic partnerships, organizational growth, and international collaboration.",
-      image: "/team/isabel-raba.jpg",
-      initials: "IR"
-    },
+
     {
       name: "Prof. Elena Rodriguez",
       role: "Education Policy Advisor",
       bio: "Professor of Education Policy at University of Luxembourg. Provides guidance on educational frameworks and international standards.",
       image: "/team/elena-rodriguez.jpg",
       initials: "ER"
-    },
-    {
-      name: "Thomas Schmidt",
-      role: "Technology & Innovation Advisor",
-      bio: "CEO of European Tech Council. Advises on STEM education initiatives and industry-academia collaboration strategies.",
-      image: "/team/thomas-schmidt.jpg",
-      initials: "TS"
     },
     {
       name: "Dr. Fatima Al-Mansoori",
@@ -66,47 +53,33 @@ export default function OurTeamPage() {
   ];
 
   const coreTeam = [
-    {
-      name: "Amina Diallo",
-      role: "Community Outreach Lead",
-      bio: "Passionate about creating inclusive programs that reach underserved student communities across Europe.",
-      image: "/team/amina-diallo.jpg",
-      initials: "AD"
+        {
+      name: "Silvia Mincheva",
+      role: "Program Lead",
+      bio: "Leads program development and implementation. Expert in educational program design, curriculum development, and creating impactful mentorship frameworks.",
+      image: "/team/Core team/silvia.png",
+      initials: "S"
     },
     {
-      name: "Robert Kim",
-      role: "Mentorship Program Manager",
-      bio: "Former HR director with expertise in talent development and mentor-mentee matching algorithms.",
+      name: "Md Naved Mansoori",
+      role: "Developer",
+      bio: "Software developer specializing in educational technology platforms. Builds and maintains digital tools for mentorship programs and student engagement.",
+      image: "/team/Core team/naved.jpg",
+      initials: "N"
+    },
+    {
+      name: "Chinmay Gupta",
+      role: "Product Manager",
+      bio: "Product manager focused on developing educational technology solutions. Oversees product development lifecycle and user experience for mentorship platforms.",
+      image: "/team/core team/chinmay.png",
+      initials: "CG"
+    },
+    {
+      name: "Yash Pandey",
+      role: "Mentee",
+      bio: "Current student and program participant. Provides valuable feedback from a mentee perspective to improve program effectiveness and student experience.",
       image: "/team/robert-kim.jpg",
-      initials: "RK"
-    },
-    {
-      name: "Sophie Martin",
-      role: "Technology Director",
-      bio: "Leads development of digital platforms and mentorship app infrastructure. Former software engineer at Amazon.",
-      image: "/team/sophie-martin.jpg",
-      initials: "SM"
-    },
-    {
-      name: "Carlos Rodriguez",
-      role: "Program Coordinator",
-      bio: "Manages industrial visits and student placement programs. Background in event management and logistics.",
-      image: "/team/carlos-rodriguez.jpg",
-      initials: "CR"
-    },
-    {
-      name: "Lisa Wang",
-      role: "Communications Manager",
-      bio: "Handles media relations, social media, and stakeholder communications. Former journalist at BBC.",
-      image: "/team/lisa-wang.jpg",
-      initials: "LW"
-    },
-    {
-      name: "Mohammed Ali",
-      role: "Finance & Operations Manager",
-      bio: "Manages budgeting, grants, and operational efficiency. CPA with 10+ years nonprofit experience.",
-      image: "/team/mohammed-ali.jpg",
-      initials: "MA"
+      initials: "YP"
     }
   ];
 
@@ -258,14 +231,25 @@ export default function OurTeamPage() {
                   The dedicated professionals who manage our day-to-day operations and program implementation.
                 </p>
               </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {coreTeam.map((member, index) => (
                   <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                     <div className="p-6">
                       <div className="flex flex-col items-center text-center">
                         <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-50 rounded-full flex items-center justify-center mb-4 relative overflow-hidden">
-                          {/* Placeholder for image */}
-                          <div className="w-full h-full bg-gradient-to-br from-purple-200 to-purple-300 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={80}
+                            height={80}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              const fallback = e.target.parentNode.querySelector('.image-fallback');
+                              if (fallback) fallback.style.display = 'flex';
+                            }}
+                          />
+                          <div className="image-fallback w-full h-full bg-gradient-to-br from-purple-200 to-purple-300 flex items-center justify-center" style={{ display: 'none' }}>
                             <span className="text-xl font-bold text-white">{member.initials}</span>
                           </div>
                         </div>
