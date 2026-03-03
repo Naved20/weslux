@@ -174,6 +174,592 @@ export default function MentorshipPage() {
           </div>
         </section>
 
+        {/* Mentee Flow Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Complete Mentee Journey</h2>
+                <p className="text-gray-600 max-w-3xl mx-auto">
+                  A structured, step-by-step process designed specifically for mentees to guide you from registration to mentorship completion and beyond.
+                </p>
+              </div>
+
+              {/* Detailed 6-Step Flow */}
+              <div className="space-y-8">
+                {/* Step 1 */}
+                <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                      <span className="text-xl font-bold text-blue-600">1</span>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Mentee ID Creation & Registration</h3>
+                      <p className="text-gray-600 mb-3">
+                        Begin your mentorship journey by creating your unique mentee profile. This initial step establishes your identity on our platform and grants you access to the mentorship ecosystem.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div className="bg-blue-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-blue-700 mb-1">Registration</h4>
+                          <p className="text-sm text-gray-600">Sign up with basic details including name, email, and password to create your account.</p>
+                        </div>
+                        <div className="bg-blue-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-blue-700 mb-1">Email/OTP Verification</h4>
+                          <p className="text-sm text-gray-600">Verify your email address through OTP confirmation to ensure account security and authenticity.</p>
+                        </div>
+                        <div className="bg-blue-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-blue-700 mb-1">Dashboard Access</h4>
+                          <p className="text-sm text-gray-600">Gain immediate access to your personalized dashboard with limited features until profile completion.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                      <span className="text-xl font-bold text-green-600">2</span>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Profile Completion & Personalization</h3>
+                      <p className="text-gray-600 mb-3">
+                        Complete your professional profile to enable intelligent mentor matching. This detailed profile helps our algorithm find mentors who align perfectly with your goals and aspirations.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                        <div className="bg-green-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-green-700 mb-1">Skills Assessment</h4>
+                          <p className="text-sm text-gray-600">Document your current skills, expertise areas, and technical competencies for accurate matching.</p>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-green-700 mb-1">Career Goals</h4>
+                          <p className="text-sm text-gray-600">Define short-term and long-term career objectives to guide your mentorship direction.</p>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-green-700 mb-1">Interests & Preferences</h4>
+                          <p className="text-sm text-gray-600">Specify industry interests, learning preferences, and professional development areas.</p>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-green-700 mb-1">Mentorship Type</h4>
+                          <p className="text-sm text-gray-600">Choose between short-term or long-term mentorship based on your immediate needs and availability.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                      <span className="text-xl font-bold text-purple-600">3</span>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Browse & Select Your Mentor</h3>
+                      <p className="text-gray-600 mb-3">
+                        Explore our curated network of experienced mentors using advanced filtering tools. Review detailed profiles, expertise areas, and availability to find your ideal match.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div className="bg-purple-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-purple-700 mb-1">Advanced Filters</h4>
+                          <p className="text-sm text-gray-600">Filter mentors by industry, experience level, expertise, availability, and mentorship style.</p>
+                        </div>
+                        <div className="bg-purple-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-purple-700 mb-1">Profile Review</h4>
+                          <p className="text-sm text-gray-600">View detailed mentor profiles including background, achievements, and previous mentee feedback.</p>
+                        </div>
+                        <div className="bg-purple-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-purple-700 mb-1">Request Submission</h4>
+                          <p className="text-sm text-gray-600">Send personalized mentorship requests outlining your goals and expectations for the relationship.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-indigo-500">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                      <span className="text-xl font-bold text-indigo-600">4</span>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Approval & Scheduling</h3>
+                      <p className="text-gray-600 mb-3">
+                        Once your mentor accepts your request, establish the foundation for your mentorship relationship through structured planning and scheduling.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div className="bg-indigo-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-indigo-700 mb-1">Request Acceptance</h4>
+                          <p className="text-sm text-gray-600">Receive mentor approval or feedback on your request, with options for modification if needed.</p>
+                        </div>
+                        <div className="bg-indigo-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-indigo-700 mb-1">Session Scheduling</h4>
+                          <p className="text-sm text-gray-600">Coordinate meeting times using integrated calendar tools with timezone support and availability matching.</p>
+                        </div>
+                        <div className="bg-indigo-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-indigo-700 mb-1">Confirmation & Setup</h4>
+                          <p className="text-sm text-gray-600">Finalize mentorship terms, set up communication channels, and prepare for your first session.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 5 */}
+                <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                      <span className="text-xl font-bold text-orange-600">5</span>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Active Mentorship Engagement</h3>
+                      <p className="text-gray-600 mb-3">
+                        Engage in meaningful mentorship through regular sessions, structured learning, and continuous progress tracking to maximize your development.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                        <div className="bg-orange-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-orange-700 mb-1">Regular Sessions</h4>
+                          <p className="text-sm text-gray-600">Participate in scheduled mentoring meetings with agenda setting, note-taking, and follow-up actions.</p>
+                        </div>
+                        <div className="bg-orange-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-orange-700 mb-1">Task Assignments</h4>
+                          <p className="text-sm text-gray-600">Receive and complete learning tasks, projects, and skill-building exercises assigned by your mentor.</p>
+                        </div>
+                        <div className="bg-orange-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-orange-700 mb-1">Feedback Exchange</h4>
+                          <p className="text-sm text-gray-600">Provide and receive constructive feedback to continuously improve the mentorship experience.</p>
+                        </div>
+                        <div className="bg-orange-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-orange-700 mb-1">Progress Tracking</h4>
+                          <p className="text-sm text-gray-600">Monitor your development through milestone tracking, skill assessments, and goal achievement metrics.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 6 */}
+                <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-red-500">
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                      <span className="text-xl font-bold text-red-600">6</span>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Completion & Future Planning</h3>
+                      <p className="text-gray-600 mb-3">
+                        Conclude your current mentorship cycle with comprehensive evaluation and plan for continued growth through renewal or advanced mentorship options.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div className="bg-red-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-red-700 mb-1">Ratings & Reviews</h4>
+                          <p className="text-sm text-gray-600">Provide detailed feedback about your mentorship experience and rate your mentor's effectiveness.</p>
+                        </div>
+                        <div className="bg-red-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-red-700 mb-1">Upgrade Options</h4>
+                          <p className="text-sm text-gray-600">Transition from short-term to long-term mentorship for continued development and deeper engagement.</p>
+                        </div>
+                        <div className="bg-red-50 p-3 rounded-lg">
+                          <h4 className="font-medium text-red-700 mb-1">Renewal Planning</h4>
+                          <p className="text-sm text-gray-600">Plan for mentorship renewal with updated goals, or explore new mentor relationships for different skill areas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mentorship Types Subsection */}
+              <div className="mt-16">
+                <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Mentorship Types Explained</h3>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  {/* Short-Term Mentorship */}
+                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-6 border border-blue-100">
+                    <div className="flex items-center mb-4">
+                      <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">Short-Term Mentorship</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Definition</h5>
+                        <p className="text-gray-600 text-sm">
+                          A focused, time-bound engagement designed to address specific challenges or achieve particular goals within a condensed timeframe.
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Duration</h5>
+                        <p className="text-gray-600 text-sm">
+                          Typically 3-11 months with 10-20 sessions, ideal for immediate problem-solving and quick skill acquisition.
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Use Cases</h5>
+                        <ul className="text-gray-600 text-sm space-y-1">
+                          <li className="flex items-start">
+                            <svg className="w-4 h-4 text-blue-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Resume review and interview preparation</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="w-4 h-4 text-blue-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Specific skill coaching or project guidance</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="w-4 h-4 text-blue-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Quick career advice and networking introductions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Focus</h5>
+                        <p className="text-gray-600 text-sm">
+                          Task-oriented with immediate results, providing targeted solutions for specific professional challenges.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Long-Term Mentorship */}
+                  <div className="bg-gradient-to-br from-green-50 to-white rounded-xl shadow-lg p-6 border border-green-100">
+                    <div className="flex items-center mb-4">
+                      <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900">Long-Term Mentorship</h4>
+                    </div>
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Definition</h5>
+                        <p className="text-gray-600 text-sm">
+                          A structured, ongoing relationship focused on comprehensive professional development and holistic growth over an extended period.
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Duration</h5>
+                        <p className="text-gray-600 text-sm">
+                          12 months with regular weekly or bi-weekly sessions, allowing for deep relationship building and sustained progress.
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Career Roadmap</h5>
+                        <ul className="text-gray-600 text-sm space-y-1">
+                          <li className="flex items-start">
+                            <svg className="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Career transition planning and strategy development</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Leadership development and executive coaching</span>
+                          </li>
+                          <li className="flex items-start">
+                            <svg className="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Skill mastery and professional certification preparation</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-1">Continuous Development</h5>
+                        <p className="text-gray-600 text-sm">
+                          Holistic approach focusing on personal growth, professional identity, and long-term career strategy with regular progress assessments.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Section */}
+              <div className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 text-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Begin Your Mentorship Journey?</h3>
+                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                  Whether you need quick guidance or long-term development, our platform provides the structure and support for your professional growth.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="https://mentorship.weslux.lu" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    Start Your Journey
+                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </a>
+                  <a 
+                    href="/contact" 
+                    className="inline-flex items-center px-6 py-3 border-2 border-blue-500 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors duration-300"
+                  >
+                    Contact Support
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mentor Flow Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Complete Mentor Journey</h2>
+                <p className="text-gray-600 max-w-3xl mx-auto">
+                  A structured, step-by-step guide for mentors to effectively guide and support their mentees through the mentorship journey.
+                </p>
+              </div>
+
+              {/* Step 1 */}
+              <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500 mb-8">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-xl font-bold text-blue-600">1</span>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Account Creation & Onboarding</h3>
+                    <p className="text-gray-600 mb-4">
+                      Begin your mentorship journey by creating your mentor profile. Complete the registration with your professional details, verify your email, and set up your account security.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                      <div className="bg-blue-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-blue-700 mb-1">Sign Up & Verification</h4>
+                        <p className="text-sm text-gray-600">Create account, verify email, and set up 2FA</p>
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-blue-700 mb-1">Profile Setup</h4>
+                        <p className="text-sm text-gray-600">Complete professional profile with expertise</p>
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-blue-700 mb-1">Agreements</h4>
+                        <p className="text-sm text-gray-600">Accept terms, code of conduct, and privacy policy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500 mb-8">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-xl font-bold text-green-600">2</span>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Profile Setup & Configuration</h3>
+                    <p className="text-gray-600 mb-4">
+                      Build a comprehensive mentor profile that showcases your expertise and availability to potential mentees.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                      <div className="bg-green-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-green-700 mb-1">Expertise Setup</h4>
+                        <p className="text-sm text-gray-600">Define skills, industry focus, and specialization areas</p>
+                      </div>
+                      <div className="bg-green-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-green-700 mb-1">Availability</h4>
+                        <p className="text-sm text-gray-600">Set working hours, timezone, and session preferences</p>
+                      </div>
+                      <div className="bg-green-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-green-700 mb-1">Mentorship Style</h4>
+                        <p className="text-sm text-gray-600">Define your mentoring approach and communication style</p>
+                      </div>
+                      <div className="bg-green-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-green-700 mb-1">Mentorship Goals</h4>
+                        <p className="text-sm text-gray-600">Set objectives and expected outcomes for mentees</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500 mb-8">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-xl font-bold text-purple-600">3</span>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Mentorship Request Management</h3>
+                    <p className="text-gray-600 mb-4">
+                      Review and manage mentorship requests from potential mentees. Evaluate compatibility and alignment with your expertise.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                      <div className="bg-purple-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-purple-700 mb-1">Request Review</h4>
+                        <p className="text-sm text-gray-600">Evaluate mentee profiles and mentorship requests</p>
+                      </div>
+                      <div className="bg-purple-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-purple-700 mb-1">Compatibility Check</h4>
+                        <p className="text-sm text-gray-600">Assess alignment with your expertise and availability</p>
+                      </div>
+                      <div className="bg-purple-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-purple-700 mb-1">Decision Making</h4>
+                        <p className="text-sm text-gray-600">Accept, request more info, or decline with feedback</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-indigo-500 mb-8">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-xl font-bold text-indigo-600">4</span>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Session Planning & Scheduling</h3>
+                    <p className="text-gray-600 mb-4">
+                      Plan and schedule mentoring sessions with your mentee, set clear agendas, and establish communication protocols.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                      <div className="bg-indigo-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-indigo-700 mb-1">Calendar Integration</h4>
+                        <p className="text-sm text-gray-600">Sync with your calendar and set availability</p>
+                      </div>
+                      <div className="bg-indigo-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-indigo-700 mb-1">Agenda Setting</h4>
+                        <p className="text-sm text-gray-600">Define session goals and discussion topics</p>
+                      </div>
+                      <div className="bg-indigo-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-indigo-700 mb-1">Resource Preparation</h4>
+                        <p className="text-sm text-gray-600">Prepare materials and resources for sessions</p>
+                      </div>
+                      <div className="bg-indigo-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-indigo-700 mb-1">Communication Setup</h4>
+                        <p className="text-sm text-gray-600">Establish communication channels and tools</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500 mb-8">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-xl font-bold text-orange-600">5</span>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Active Mentorship Delivery</h3>
+                    <p className="text-gray-600 mb-4">
+                      Conduct effective mentoring sessions, provide guidance, and track progress through structured engagement.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                      <div className="bg-orange-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-orange-700 mb-1">Session Facilitation</h4>
+                        <p className="text-sm text-gray-600">Lead productive mentoring sessions with clear objectives</p>
+                      </div>
+                      <div className="bg-orange-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-orange-700 mb-1">Progress Tracking</h4>
+                        <p className="text-sm text-gray-600">Monitor mentee progress and skill development</p>
+                      </div>
+                      <div className="bg-orange-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-orange-700 mb-1">Feedback Loop</h4>
+                        <p className="text-sm text-gray-600">Provide constructive feedback and guidance</p>
+                      </div>
+                      <div className="bg-orange-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-orange-700 mb-1">Skill Development</h4>
+                        <p className="text-sm text-gray-600">Focus on specific skill development areas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 6 */}
+              <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-red-500">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-xl font-bold text-red-600">6</span>
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Progress Review & Program Completion</h3>
+                    <p className="text-gray-600 mb-4">
+                      Evaluate the mentorship journey, assess outcomes, and plan for continued growth and development.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                      <div className="bg-red-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-red-700 mb-1">Outcome Assessment</h4>
+                        <p className="text-sm text-gray-600">Evaluate achievement of mentorship goals</p>
+                      </div>
+                      <div className="bg-red-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-red-700 mb-1">Feedback Exchange</h4>
+                        <p className="text-sm text-gray-600">Gather and provide constructive feedback</p>
+                      </div>
+                      <div className="bg-red-50 p-3 rounded-lg">
+                        <h4 className="font-medium text-red-700 mb-1">Future Planning</h4>
+                        <p className="text-sm text-gray-600">Create roadmap for continued development</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mentor Support & Resources */}
+              <div className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Mentor Support & Resources</h3>
+                <div className="grid md:grid-cols-2 gap-8 mt-6">
+                  <div className="space-y-4">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">Mentor Resources</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-gray-700">Mentor Training Materials</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-gray-700">Best Practices Library</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-gray-700">Community Forum Access</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="space-y-4">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">Success Metrics</h4>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                        <div className="text-2xl font-bold text-blue-600">95%</div>
+                        <div className="text-sm text-gray-600">Mentor Satisfaction</div>
+                      </div>
+                      <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                        <div className="text-2xl font-bold text-green-600">4.8/5</div>
+                        <div className="text-sm text-gray-600">Mentor Rating</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Tutorial Videos Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
