@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +10,18 @@ export default function Header() {
   const [mobilePartnersOpen, setMobilePartnersOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileJoinUsOpen, setMobileJoinUsOpen] = useState(false);
+  
+  // Desktop dropdown states
+  const [desktopAboutOpen, setDesktopAboutOpen] = useState(false);
+  const [desktopProgramOpen, setDesktopProgramOpen] = useState(false);
+  const [desktopPartnersOpen, setDesktopPartnersOpen] = useState(false);
+  const [desktopJoinUsOpen, setDesktopJoinUsOpen] = useState(false);
+  
+  // Timeout references for delayed closing
+  const aboutTimeoutRef = useRef(null);
+  const programTimeoutRef = useRef(null);
+  const partnersTimeoutRef = useRef(null);
+  const joinUsTimeoutRef = useRef(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -34,6 +46,69 @@ export default function Header() {
   const toggleMobilePartners = () => {
     setMobilePartnersOpen(!mobilePartnersOpen);
   };
+
+  // Desktop dropdown handlers with delay
+  const handleDesktopAboutMouseEnter = () => {
+    if (aboutTimeoutRef.current) {
+      clearTimeout(aboutTimeoutRef.current);
+    }
+    setDesktopAboutOpen(true);
+  };
+
+  const handleDesktopAboutMouseLeave = () => {
+    aboutTimeoutRef.current = setTimeout(() => {
+      setDesktopAboutOpen(false);
+    }, 300); // 300ms delay before closing
+  };
+
+  const handleDesktopProgramMouseEnter = () => {
+    if (programTimeoutRef.current) {
+      clearTimeout(programTimeoutRef.current);
+    }
+    setDesktopProgramOpen(true);
+  };
+
+  const handleDesktopProgramMouseLeave = () => {
+    programTimeoutRef.current = setTimeout(() => {
+      setDesktopProgramOpen(false);
+    }, 300); // 300ms delay before closing
+  };
+
+  const handleDesktopPartnersMouseEnter = () => {
+    if (partnersTimeoutRef.current) {
+      clearTimeout(partnersTimeoutRef.current);
+    }
+    setDesktopPartnersOpen(true);
+  };
+
+  const handleDesktopPartnersMouseLeave = () => {
+    partnersTimeoutRef.current = setTimeout(() => {
+      setDesktopPartnersOpen(false);
+    }, 300); // 300ms delay before closing
+  };
+
+  const handleDesktopJoinUsMouseEnter = () => {
+    if (joinUsTimeoutRef.current) {
+      clearTimeout(joinUsTimeoutRef.current);
+    }
+    setDesktopJoinUsOpen(true);
+  };
+
+  const handleDesktopJoinUsMouseLeave = () => {
+    joinUsTimeoutRef.current = setTimeout(() => {
+      setDesktopJoinUsOpen(false);
+    }, 300); // 300ms delay before closing
+  };
+
+  // Clean up timeouts on unmount
+  useEffect(() => {
+    return () => {
+      if (aboutTimeoutRef.current) clearTimeout(aboutTimeoutRef.current);
+      if (programTimeoutRef.current) clearTimeout(programTimeoutRef.current);
+      if (partnersTimeoutRef.current) clearTimeout(partnersTimeoutRef.current);
+      if (joinUsTimeoutRef.current) clearTimeout(joinUsTimeoutRef.current);
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-lg border-b border-gray-200/80 shadow-sm">
@@ -72,15 +147,19 @@ export default function Header() {
             </Link>
             
             {/* About Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative"
+              onMouseEnter={handleDesktopAboutMouseEnter}
+              onMouseLeave={handleDesktopAboutMouseLeave}
+            >
               <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 flex items-center space-x-1">
                 <span>About Us</span>
-                <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-3.5 h-3.5 transition-transform duration-200 ${desktopAboutOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               
-              <div className="absolute left-0 top-full mt-1 hidden group-hover:block bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn">
+              <div className={`absolute left-0 top-full mt-1 ${desktopAboutOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}>
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">About WES</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Learn more about our organization</p>
@@ -161,15 +240,19 @@ export default function Header() {
             </div>
             
             {/* Program Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative"
+              onMouseEnter={handleDesktopProgramMouseEnter}
+              onMouseLeave={handleDesktopProgramMouseLeave}
+            >
               <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 flex items-center space-x-1">
                 <span>Program</span>
-                <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-3.5 h-3.5 transition-transform duration-200 ${desktopProgramOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               
-              <div className="absolute left-0 top-full mt-1 hidden group-hover:block bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn">
+              <div className={`absolute left-0 top-full mt-1 ${desktopProgramOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}>
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">Program Details</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Explore our programs</p>
@@ -210,15 +293,19 @@ export default function Header() {
             </div>
             
             {/* Partners Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative"
+              onMouseEnter={handleDesktopPartnersMouseEnter}
+              onMouseLeave={handleDesktopPartnersMouseLeave}
+            >
               <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 flex items-center space-x-1">
                 <span>Partners</span>
-                <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-3.5 h-3.5 transition-transform duration-200 ${desktopPartnersOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               
-              <div className="absolute left-0 top-full mt-1 hidden group-hover:block bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-72 z-50 animate-fadeIn">
+              <div className={`absolute left-0 top-full mt-1 ${desktopPartnersOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-72 z-50 animate-fadeIn`}>
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">Partner Categories</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Collaborate with us</p>
@@ -283,15 +370,19 @@ export default function Header() {
             </Link>
             
             {/* Join Us Dropdown */}
-            <div className="relative group">
+            <div 
+              className="relative"
+              onMouseEnter={handleDesktopJoinUsMouseEnter}
+              onMouseLeave={handleDesktopJoinUsMouseLeave}
+            >
               <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium text-[10px] rounded-lg hover:bg-blue-50/80 transition-all duration-200 flex items-center space-x-1">
                 <span>Join Us</span>
-                <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-3.5 h-3.5 transition-transform duration-200 ${desktopJoinUsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               
-              <div className="absolute left-0 top-full mt-1 hidden group-hover:block bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn">
+              <div className={`absolute left-0 top-full mt-1 ${desktopJoinUsOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-lg border border-gray-200/80 shadow-2xl rounded-xl py-3 w-64 z-50 animate-fadeIn`}>
                 <div className="px-4 py-2 border-b border-gray-100">
                   <h3 className="text-sm font-bold text-gray-900">Join Our Community</h3>
                   <p className="text-xs text-gray-500 mt-0.5">Get involved with WES</p>

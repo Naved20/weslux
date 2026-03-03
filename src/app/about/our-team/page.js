@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function OurTeamPage() {
   const foundingTeam = [
     {
-      name: "Mohmmad Arif",
+      name: "Arif Mohmmad",
       role: "Founder & President",
       bio: "Founder of WES Luxembourg for Education with extensive experience in the financial industry. Passionate about providing quality education to disadvantaged communities and bridging educational gaps.",
       image: "/team/Founding Team/arif.png",
@@ -61,7 +61,7 @@ export default function OurTeamPage() {
       initials: "S"
     },
     {
-      name: "Md Naved Mansoori",
+      name: "Naved Mansoori",
       role: "Developer",
       bio: "Software developer specializing in educational technology platforms. Builds and maintains digital tools for mentorship programs and student engagement.",
       image: "/team/Core team/naved.jpg",

@@ -346,42 +346,11 @@ export default function SchoolsPage() {
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Partnership Interest *
+                          Partnership Scope *
                         </label>
                         <div className="space-y-2 bg-white/30 backdrop-blur-sm rounded-xl p-4 border border-gray-200/30">
-                          <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
-                            <input 
-                              type="checkbox" 
-                              name="interests" 
-                              value="mentorship" 
-                              checked={formData.interests.includes('mentorship')}
-                              onChange={handleInputChange}
-                              className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500/50" 
-                            />
-                            <span className="ml-3 text-gray-700">Student Mentorship Programs</span>
-                          </label>
-                          <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
-                            <input 
-                              type="checkbox" 
-                              name="interests" 
-                              value="visits" 
-                              checked={formData.interests.includes('visits')}
-                              onChange={handleInputChange}
-                              className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500/50" 
-                            />
-                            <span className="ml-3 text-gray-700">Industrial Exposure Visits</span>
-                          </label>
-                          <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
-                            <input 
-                              type="checkbox" 
-                              name="interests" 
-                              value="curriculum" 
-                              checked={formData.interests.includes('curriculum')}
-                              onChange={handleInputChange}
-                              className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500/50" 
-                            />
-                            <span className="ml-3 text-gray-700">Curriculum Enhancement</span>
-                          </label>
+
+                          
                           <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
                             <input 
                               type="checkbox" 
@@ -391,7 +360,29 @@ export default function SchoolsPage() {
                               onChange={handleInputChange}
                               className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500/50" 
                             />
-                            <span className="ml-3 text-gray-700">Career Guidance Programs</span>
+                            <span className="ml-3 text-gray-700">Mentorship Programs</span>
+                          </label>
+                          <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
+                            <input 
+                              type="checkbox" 
+                              name="interests" 
+                              value="other" 
+                              checked={formData.interests.includes('other')}
+                              onChange={handleInputChange}
+                              className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500/50" 
+                            />
+                            <span className="ml-3 text-gray-700">Globle Tech Connect</span>
+                          </label>
+                          <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
+                            <input 
+                              type="checkbox" 
+                              name="interests" 
+                              value="other" 
+                              checked={formData.interests.includes('other')}
+                              onChange={handleInputChange}
+                              className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500/50" 
+                            />
+                            <span className="ml-3 text-gray-700">Industrial Exposure Visit</span>
                           </label>
                           <label className="flex items-center p-2 hover:bg-white/50 rounded-lg transition-all duration-300">
                             <input 
