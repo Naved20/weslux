@@ -174,6 +174,111 @@ export default function MentorshipPage() {
           </div>
         </section>
 
+        {/* Tutorial Videos Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Mentor Connect App Tutorials</h2>
+              <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Get started with our Mentor Connect platform using these step-by-step tutorial videos. Learn how to navigate the app and make the most of your mentorship experience.
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-8">
+                {/* Mentor Tutorial */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">For Mentors</h3>
+                    <p className="text-gray-600 mb-4">
+                      Learn how to set up your mentor profile, connect with mentees, and provide effective guidance through our platform.
+                    </p>
+                  </div>
+                  <div className="bg-gray-100 p-4">
+                    <video 
+                      className="w-full h-48 object-cover rounded-lg"
+                      controls
+                      poster="/mentorship tutorial/mentor connect tutorial for mentor.mp4?thumbnail"
+                    >
+                      <source src="/mentorship tutorial/mentor connect tutorial for mentor.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+
+                {/* Mentee Tutorial */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-6">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" transform="translate(0 12)"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">For Mentees</h3>
+                    <p className="text-gray-600 mb-4">
+                      Discover how to find the right mentor, schedule sessions, and track your progress in the mentorship program.
+                    </p>
+                  </div>
+                  <div className="bg-gray-100 p-4">
+                    <video 
+                      className="w-full h-48 object-cover rounded-lg"
+                      controls
+                      poster="/mentorship tutorial/mentor connect tutorial for mentee.mp4?thumbnail"
+                    >
+                      <source src="/mentorship tutorial/mentor connect tutorial for mentee.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+
+                {/* Institution Tutorial */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="p-6">
+                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                      <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">For Institutions</h3>
+                    <p className="text-gray-600 mb-4">
+                      Learn how educational institutions can manage their mentorship programs and track student progress through the platform.
+                    </p>
+                  </div>
+                  <div className="bg-gray-100 p-4">
+                    <video 
+                      className="w-full h-48 object-cover rounded-lg"
+                      controls
+                      poster="/mentorship tutorial/mentor connect tutorial for institution.mp4?thumbnail"
+                    >
+                      <source src="/mentorship tutorial/mentor connect tutorial for institution.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12 text-center">
+                <p className="text-gray-600 mb-6">
+                  Need additional help? Contact our support team for personalized assistance.
+                </p>
+                <a 
+                  href="/contact" 
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  Contact Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
           <div className="container mx-auto px-4">
