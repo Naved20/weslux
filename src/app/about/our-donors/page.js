@@ -1,35 +1,40 @@
+import Link from 'next/link';
 import { Header, Footer } from '@/components';
 
 export default function OurDonorsPage() {
   const majorDonors = [
     {
       name: "Œuvre Nationale de Secours Grande-Duchesse Charlotte",
-      category: "National Relief Fund",
+      category: "Œuvre Nationale",
       support: "Mentorship Program Grant (€22,000)",
       logoColor: "bg-blue-100",
       textColor: "text-blue-600",
-      isOfficial: true
+      isOfficial: true,
+      image: "/doner/Œuvre Nationale de Secours Grande-Duchesse Charlotte.png"
     },
     {
       name: "Luxembourg Education Foundation",
       category: "Foundation",
       support: "Core Program Funding",
       logoColor: "bg-green-100",
-      textColor: "text-green-600"
+      textColor: "text-green-600",
+      image: "/doner/luxembourg-education-foundation.png" // Add this image later
     },
     {
       name: "European Union Education Initiative",
       category: "Government",
       support: "International Partnership Grant",
       logoColor: "bg-purple-100",
-      textColor: "text-purple-600"
+      textColor: "text-purple-600",
+      image: "/doner/eu-education-initiative.png" // Add this image later
     },
     {
       name: "TechForGood Alliance",
       category: "Corporate",
       support: "Technology Infrastructure",
       logoColor: "bg-orange-100",
-      textColor: "text-orange-600"
+      textColor: "text-orange-600",
+      image: "/doner/techforgood-alliance.png" // Add this image later
     }
   ];
 
@@ -133,12 +138,13 @@ export default function OurDonorsPage() {
                   <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                     <div className="p-6">
                       <div className="flex items-start space-x-4">
-                        <div className={`w-16 h-16 ${donor.logoColor} rounded-xl flex items-center justify-center flex-shrink-0`}>
-                          {donor.isOfficial ? (
-                            <div className="text-center">
-                              <div className="text-xs font-bold text-blue-600">ONS</div>
-                              <div className="text-xs text-blue-500">GD</div>
-                            </div>
+                        <div className={`w-20 h-20 ${donor.logoColor} rounded-xl flex items-center justify-center flex-shrink-0 p-2`}>
+                          {donor.isOfficial && donor.image ? (
+                            <img 
+                              src={donor.image} 
+                              alt={donor.name}
+                              className="w-full h-full object-contain"
+                            />
                           ) : (
                             <div className={`text-xl font-bold ${donor.textColor}`}>
                               {donor.name.split(' ').map(word => word[0]).join('')}
@@ -297,7 +303,7 @@ export default function OurDonorsPage() {
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">2025 Funding Agreement - CRE</h3>
                     <p className="text-gray-600 mb-4">
-                      Official funding agreement between WES Luxembourg for Education and the National Relief Fund (Œuvre Nationale de Secours Grande-Duchesse Charlotte), outlining the €22,000 grant approval for the "Mentorship Program - WES Lux Career Guidance Program" with detailed implementation framework and reporting requirements for 2025-2027.
+                      Official funding agreement between WES Luxembourg for Education and the Œuvre Nationale (Œuvre Nationale de Secours Grande-Duchesse Charlotte), outlining the €22,000 grant approval for the "Mentorship Program - WES Lux Career Guidance Program" with detailed implementation framework and reporting requirements for 2025-2027.
                     </p>
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -322,13 +328,13 @@ export default function OurDonorsPage() {
 
               {/* Agreement Summary */}
               <div className="bg-white border border-gray-200 rounded-2xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">National Relief Fund Partnership Summary</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Œuvre Nationale Partnership Summary</h3>
                 
                 <div className="space-y-6">
                   <div className="bg-blue-50 p-6 rounded-xl">
                     <h4 className="text-lg font-bold text-gray-900 mb-3">Grant Approval & Partnership</h4>
                     <p className="text-gray-600">
-                      The National Relief Fund (Œuvre Nationale de Secours Grande-Duchesse Charlotte) has approved financial support of <strong>€22,000</strong> (twenty-two thousand euros) for the "Mentorship Program - WES Lux Career Guidance Program". This partnership represents a significant commitment to youth development and educational advancement in Luxembourg.
+                      The Œuvre Nationale (Œuvre Nationale de Secours Grande-Duchesse Charlotte) has approved financial support of <strong>€22,000</strong> (twenty-two thousand euros) for the "Mentorship Program - WES Lux Career Guidance Program". This partnership represents a significant commitment to youth development and educational advancement in Luxembourg.
                     </p>
                   </div>
 
@@ -351,7 +357,7 @@ export default function OurDonorsPage() {
                         <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                           <span className="text-sm font-bold text-purple-600">3</span>
                         </div>
-                        <span>The National Relief Fund logo must be displayed on all project-related communication materials</span>
+                        <span>The Œuvre Nationale logo must be displayed on all project-related communication materials</span>
                       </li>
                       <li className="flex items-start">
                         <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
@@ -394,18 +400,18 @@ export default function OurDonorsPage() {
                 Join our community of supporters and help us create more opportunities for students through mentorship and education.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
+                <Link 
                   href="/support" 
                   className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Make a Donation
-                </a>
-                <a 
+                </Link>
+                <Link 
                   href="/contact" 
                   className="px-6 py-3 border-2 border-blue-500 text-blue-600 font-medium rounded-lg hover:bg-blue-50 hover:border-blue-600 transition-all duration-300"
                 >
                   Learn About Partnership
-                </a>
+                </Link>
               </div>
             </div>
           </div>

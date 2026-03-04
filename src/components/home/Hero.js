@@ -5,9 +5,11 @@ export default function Hero() {
     <section id="home" className="relative bg-gradient-to-br from-blue-50 to-indigo-50 py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Community • Education • Technology
-          </h1>
+          <div className="flex justify-center mb-6">
+            <h1 className="text-5xl sm:text-5xl md:text-5xl font-bold text-gray-900">
+              Community • Education • Technology
+            </h1>
+          </div>
           <p className="text-xl text-gray-700 mb-8">
             We create paths where talent meets opportunity.
           </p>

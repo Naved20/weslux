@@ -25,20 +25,6 @@ export default function VisionMissionPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12">
-                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg">
-                  <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    To bridge the gap between education and industry by providing students with mentorship, global connections, and real-world exposure that prepares them for successful careers.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed">
-                    We are committed to creating pathways that connect academic learning with professional practice, ensuring students gain the skills, confidence, and opportunities needed to thrive in today's competitive world.
-                  </p>
-                </div>
 
                 <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg">
                   <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
@@ -53,6 +39,22 @@ export default function VisionMissionPage() {
                   </p>
                   <p className="text-gray-600 leading-relaxed">
                     We envision a future where education is not limited by geography or resources, where every student can connect with mentors, gain practical experience, and build the skills needed to become leaders and innovators in their chosen fields.
+                  </p>
+                </div>
+
+
+                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg">
+                  <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    To bridge the gap between education and industry by providing students with mentorship, global connections, and real-world exposure that prepares them for successful careers.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    We are committed to creating pathways that connect academic learning with professional practice, ensuring students gain the skills, confidence, and opportunities needed to thrive in today's competitive world.
                   </p>
                 </div>
               </div>

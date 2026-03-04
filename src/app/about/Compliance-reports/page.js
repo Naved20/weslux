@@ -14,7 +14,7 @@ export default function LegalComplianceReportsPage() {
                 Legal Compliance & <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Reports</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Comprehensive framework for legal compliance, regulatory adherence, and formal grievance resolution processes.
+                Official registration documents, compliance reports, and organizational transparency information.
               </p>
             </div>
           </div>
@@ -24,13 +24,13 @@ export default function LegalComplianceReportsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Legal Compliance & Grievance Resolution Framework</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Legal Compliance & Reports</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                WES Luxembourg for Education operates under a comprehensive legal compliance framework that ensures adherence to all applicable laws, regulations, and ethical standards. We maintain formal procedures for addressing legal concerns and provide structured channels for grievance resolution in accordance with Luxembourg's legal requirements and international best practices.
+                WES Luxembourg for Education operates with full transparency and adherence to Luxembourg's legal framework for non-profit associations. We maintain comprehensive documentation of our registration, governance structure, and organizational activities in accordance with the law of August 8, 2023 relating to non-profit associations and foundations.
               </p>
               <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-2xl shadow-lg">
                 <p className="text-gray-700 italic text-lg">
-                  "Our organization is committed to maintaining the highest standards of legal integrity, regulatory compliance, and transparent grievance resolution processes."
+                  "Transparency and legal compliance are the foundations of our commitment to serving the community with integrity and accountability."
                 </p>
               </div>
             </div>
@@ -38,58 +38,118 @@ export default function LegalComplianceReportsPage() {
         </section>
 
 
-        {/* Types of Legal Concerns */}
-        <section className="py-16 bg-white">
+        {/* Types of Documents */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Compliance Reporting Categories</h2>
+              
+              {/* PDF Documents Section */}
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-lg">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">Annual Compliance Reports</h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg">
+                  <div className="flex items-center gap-6 mb-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                       </svg>
-                      <span>Regulatory compliance violations</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">Annual Compliance Report</h3>
+                      <p className="text-gray-600 text-sm">Comprehensive annual compliance documentation</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <ul className="space-y-2 text-gray-600 mb-4">
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Regulatory compliance status</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Legal framework adherence</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Organizational governance review</span>
+                      </li>
+                    </ul>
+                    <div className="flex items-center text-sm text-gray-500 mb-4">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                       </svg>
-                      <span>Contractual disputes and breaches</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      Report Year: 2025
+                    </div>
+                    <a 
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg w-full justify-center"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                       </svg>
-                      <span>Legal liability and negligence claims</span>
-                    </li>
-                  </ul>
+                      View Annual Report PDF
+                    </a>
+                  </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-lg">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">Financial Reports</h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-lg">
+                  <div className="flex items-center gap-6 mb-6">
+                    <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                       </svg>
-                      <span>Governance and fiduciary duty concerns</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">Financial Report</h3>
+                      <p className="text-gray-600 text-sm">Annual financial statements and audit reports</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <ul className="space-y-2 text-gray-600 mb-4">
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Financial statements and balance sheet</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Fund allocation and expenditure</span>
+                      </li>
+                      <li className="flex items-start">
+                        <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Audit and transparency reports</span>
+                      </li>
+                    </ul>
+                    <div className="flex items-center text-sm text-gray-500 mb-4">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                       </svg>
-                      <span>Ethical violations and misconduct</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      Report Year: 2025
+                    </div>
+                    <a 
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-200 shadow-md hover:shadow-lg w-full justify-center"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                       </svg>
-                      <span>Data protection and privacy law violations</span>
-                    </li>
-                  </ul>
+                      View Financial Report PDF
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

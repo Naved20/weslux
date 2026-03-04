@@ -2,8 +2,26 @@
 
 import { Header, Footer } from '@/components';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function SupportPage() {
+  const [selectedAmount, setSelectedAmount] = useState(null);
+  const [customAmount, setCustomAmount] = useState(''); // Initialize as empty string
+  const [donationType, setDonationType] = useState('one-time'); // 'one-time' or 'monthly'
+
+  const presetAmounts = [25, 50, 100, 250];
+
+  const handleAmountSelect = (amount) => {
+    setSelectedAmount(amount);
+    setCustomAmount(amount.toString());
+  };
+
+  const handleCustomAmountChange = (e) => {
+    const value = e.target.value;
+    setCustomAmount(value);
+    setSelectedAmount(null); // Deselect preset amounts when custom amount is entered
+  };
+
   const scrollToForm = () => {
     const formSection = document.getElementById('donation-form');
     if (formSection) {
@@ -181,10 +199,26 @@ export default function SupportPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-4">Donation Type</label>
                     <div className="grid grid-cols-2 gap-4">
-                      <button type="button" className="px-6 py-3 border-2 border-green-600 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200">
+                      <button 
+                        type="button" 
+                        onClick={() => setDonationType('one-time')}
+                        className={`px-6 py-3 border-2 rounded-lg font-semibold transition-colors duration-200 ${
+                          donationType === 'one-time'
+                            ? 'border-green-600 bg-green-600 text-white'
+                            : 'border-green-600 text-green-600 hover:bg-green-50'
+                        }`}
+                      >
                         One-Time
                       </button>
-                      <button type="button" className="px-6 py-3 border-2 border-green-600 text-green-600 rounded-lg font-semibold hover:bg-green-50 transition-colors duration-200">
+                      <button 
+                        type="button" 
+                        onClick={() => setDonationType('monthly')}
+                        className={`px-6 py-3 border-2 rounded-lg font-semibold transition-colors duration-200 ${
+                          donationType === 'monthly'
+                            ? 'border-green-600 bg-green-600 text-white'
+                            : 'border-green-600 text-green-600 hover:bg-green-50'
+                        }`}
+                      >
                         Monthly
                       </button>
                     </div>
@@ -193,18 +227,20 @@ export default function SupportPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-4">Select Amount</label>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      <button type="button" className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-green-600 hover:bg-green-50 transition-colors duration-200">
-                        €25
-                      </button>
-                      <button type="button" className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-green-600 hover:bg-green-50 transition-colors duration-200">
-                        €50
-                      </button>
-                      <button type="button" className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-green-600 hover:bg-green-50 transition-colors duration-200">
-                        €100
-                      </button>
-                      <button type="button" className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-green-600 hover:bg-green-50 transition-colors duration-200">
-                        €250
-                      </button>
+                      {presetAmounts.map((amount) => (
+                        <button 
+                          key={amount}
+                          type="button" 
+                          onClick={() => handleAmountSelect(amount)}
+                          className={`px-6 py-3 border-2 rounded-lg font-semibold transition-colors duration-200 ${
+                            selectedAmount === amount
+                              ? 'border-green-600 bg-green-600 text-white'
+                              : 'border-gray-300 hover:border-green-600 hover:bg-green-50'
+                          }`}
+                        >
+                          €{amount}
+                        </button>
+                      ))}
                     </div>
                   </div>
 
@@ -218,6 +254,10 @@ export default function SupportPage() {
                         type="number"
                         id="custom-amount"
                         placeholder="0.00"
+                        value={customAmount}
+                        onChange={handleCustomAmountChange}
+                        min="0"
+                        step="0.01"
                         className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                       />
                     </div>

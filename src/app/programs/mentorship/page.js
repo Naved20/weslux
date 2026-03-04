@@ -934,20 +934,127 @@ export default function MentorshipPage() {
                 </div>
               </div>
 
-              <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-                <p className="text-gray-600 mb-6">
-                  Need additional help? Contact our support team for personalized assistance.
-                </p>
-                <a 
-                  href="/contact" 
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                  Contact Support
-                </a>
+
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Frequently Asked Questions</h2>
+              <p className="text-gray-600 text-center mb-12">
+                Find answers to common questions about our mentorship program.
+              </p>
+
+              <div className="space-y-6">
+                {/* FAQ 1 */}
+                <details className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">How do I sign up for the mentorship program?</h3>
+                    <svg className="w-6 h-6 text-blue-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Visit our Mentor Connect platform at <a href="https://mentorship.weslux.lu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">mentorship.weslux.lu</a> and click on "Sign Up". Choose whether you want to register as a mentee or mentor, complete your profile with relevant information, and verify your email address. Once your profile is approved, you can start browsing mentors or accepting mentee requests.
+                  </p>
+                </details>
+
+                {/* FAQ 2 */}
+                <details className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">What's the difference between short-term and long-term mentorship?</h3>
+                    <svg className="w-6 h-6 text-green-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Short-term mentorship (3-11 months) is ideal for specific goals like interview preparation, resume review, or learning a particular skill. Long-term mentorship (12+ months) focuses on comprehensive career development, leadership growth, and sustained professional transformation with regular weekly or bi-weekly sessions.
+                  </p>
+                </details>
+
+                {/* FAQ 3 */}
+                <details className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">How are mentors and mentees matched?</h3>
+                    <svg className="w-6 h-6 text-purple-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Our platform uses an intelligent matching algorithm that considers your skills, career goals, industry interests, and availability. Mentees can browse mentor profiles, filter by expertise and experience, and send personalized mentorship requests. Mentors review these requests and accept those that align with their expertise and availability.
+                  </p>
+                </details>
+
+                {/* FAQ 4 */}
+                <details className="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">Is there a cost to participate in the mentorship program?</h3>
+                    <svg className="w-6 h-6 text-orange-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Our mentorship program is completely free for students and mentees. We believe in making quality mentorship accessible to everyone. The program is supported by grants, donations, and partnerships with organizations committed to education and professional development.
+                  </p>
+                </details>
+
+                {/* FAQ 5 */}
+                <details className="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">How often do mentors and mentees meet?</h3>
+                    <svg className="w-6 h-6 text-indigo-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Meeting frequency depends on the mentorship type and mutual agreement. Short-term mentorships typically involve 10-20 sessions over 3-11 months, while long-term mentorships include weekly or bi-weekly sessions. You and your mentor will establish a schedule that works for both parties during the initial planning phase.
+                  </p>
+                </details>
+
+                {/* FAQ 6 */}
+                <details className="bg-gradient-to-br from-pink-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">Can I change my mentor if it's not a good fit?</h3>
+                    <svg className="w-6 h-6 text-pink-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Yes, we understand that sometimes mentor-mentee relationships may not be the right fit. You can discuss concerns with your mentor first, and if needed, contact our support team to explore alternative mentor options. We want to ensure you have a positive and productive mentorship experience.
+                  </p>
+                </details>
+
+                {/* FAQ 7 */}
+                <details className="bg-gradient-to-br from-teal-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">What qualifications do mentors have?</h3>
+                    <svg className="w-6 h-6 text-teal-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Our mentors are experienced professionals from various industries with proven track records in their fields. They undergo a verification process and must demonstrate relevant expertise, professional experience, and a commitment to supporting mentee development. Many hold senior positions, have years of industry experience, and possess strong communication and coaching skills.
+                  </p>
+                </details>
+
+                {/* FAQ 8 */}
+                <details className="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-xl shadow-md group">
+                  <summary className="flex justify-between items-center cursor-pointer list-none">
+                    <h3 className="text-lg font-bold text-gray-900">How do I become a mentor?</h3>
+                    <svg className="w-6 h-6 text-yellow-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    If you're an experienced professional interested in giving back, visit our platform and register as a mentor. Complete your profile with your professional background, expertise areas, and availability. Our team will review your application and, once approved, you can start accepting mentee requests and making a difference in students' lives.
+                  </p>
+                </details>
               </div>
+
+
             </div>
           </div>
         </section>
@@ -957,10 +1064,23 @@ export default function MentorshipPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Get Started?</h2>
+
               <p className="text-gray-600 mb-8">
+                Need additional help? Contact our support team for personalized assistance.
                 Join our Mentorship Program and take the first step towards achieving your career goals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+                <a 
+                  href="/contact" 
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  Contact Support
+                </a>
+
                 <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
                   <a href="https://mentorship.weslux.lu" target="_blank" rel="noopener noreferrer">
                   Apply Now
