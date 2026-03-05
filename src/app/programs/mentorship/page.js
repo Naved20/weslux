@@ -180,7 +180,7 @@ export default function MentorshipPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Explore Mentorship</h2>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-4 gap-8">
                 {/* Mentee Journey Card */}
                 <Link href="/programs/mentorship/mentee-journey" className="block">
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-blue-100">
@@ -235,13 +235,36 @@ export default function MentorshipPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Mentorship Programs</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Programs</h3>
                     <p className="text-gray-600 text-center mb-6">
                       Explore our Special and Anchor mentorship programs designed for different needs and timelines.
                     </p>
                     <div className="text-center">
                       <span className="inline-flex items-center text-purple-600 font-medium">
                         View Programs
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Institution Journey Card */}
+                <Link href="/programs/mentorship/institution-journey" className="block">
+                  <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-orange-100">
+                    <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                      <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">For Institutions</h3>
+                    <p className="text-gray-600 text-center mb-6">
+                      Guide for educational institutions to integrate mentorship programs and support student development.
+                    </p>
+                    <div className="text-center">
+                      <span className="inline-flex items-center text-orange-600 font-medium">
+                        Explore Guide
                         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
@@ -306,6 +329,51 @@ export default function MentorshipPage() {
                   </summary>
                   <p className="text-gray-600 mt-4 leading-relaxed">
                     Our mentorship program is currently offered free of charge to students and young professionals as part of our educational initiative. We believe in making professional guidance accessible to everyone regardless of financial background.
+                  </p>
+                </details>
+
+                <details className="bg-gray-50 rounded-xl p-6">
+                  <summary className="text-lg font-semibold text-gray-900 cursor-pointer">
+                    What qualifications do mentors have?
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Our mentors are experienced professionals with at least 5 years of industry experience in their respective fields. They undergo a rigorous selection process including background checks, interviews, and training to ensure they can provide quality guidance to mentees.
+                  </p>
+                </details>
+
+                <details className="bg-gray-50 rounded-xl p-6">
+                  <summary className="text-lg font-semibold text-gray-900 cursor-pointer">
+                    How are mentors and mentees matched?
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    We use an intelligent matching algorithm that considers factors like industry, skills, career goals, personality traits, and availability. You can also browse mentor profiles and request specific mentors based on your preferences.
+                  </p>
+                </details>
+
+                <details className="bg-gray-50 rounded-xl p-6">
+                  <summary className="text-lg font-semibold text-gray-900 cursor-pointer">
+                    What support is provided during the mentorship?
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    We provide comprehensive support including session planning tools, progress tracking, goal setting frameworks, and regular check-ins with our program coordinators. Both mentors and mentees have access to resources and training materials.
+                  </p>
+                </details>
+
+                <details className="bg-gray-50 rounded-xl p-6">
+                  <summary className="text-lg font-semibold text-gray-900 cursor-pointer">
+                    Can I have more than one mentor?
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    Yes, you can have multiple mentors for different skill areas or career goals. Our platform allows you to manage multiple mentorship relationships simultaneously, though we recommend starting with one mentor to ensure you can fully commit to the relationship.
+                  </p>
+                </details>
+
+                <details className="bg-gray-50 rounded-xl p-6">
+                  <summary className="text-lg font-semibold text-gray-900 cursor-pointer">
+                    What happens after the mentorship program ends?
+                  </summary>
+                  <p className="text-gray-600 mt-4 leading-relaxed">
+                    After completing a mentorship program, you can choose to renew with the same mentor, find a new mentor for different goals, or become a mentor yourself. We also provide alumni networking opportunities and continued access to resources.
                   </p>
                 </details>
               </div>
