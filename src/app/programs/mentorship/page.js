@@ -175,12 +175,45 @@ export default function MentorshipPage() {
           </div>
         </section>
 
-        {/* Navigation Cards Section */}
+        {/* Explore Mentorship Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Explore Mentorship</h2>
-              <div className="grid md:grid-cols-4 gap-8">
+              <div className="flex justify-center">
+                {/* Mentorship Programs Card */}
+                <Link href="/programs/mentorship/programs" className="block max-w-md">
+                  <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-purple-100">
+                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                      <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Mentorship Programs</h3>
+                    <p className="text-gray-600 text-center mb-6">
+                      Explore our Special and Anchor mentorship programs designed for different needs and timelines.
+                    </p>
+                    <div className="text-center">
+                      <span className="inline-flex items-center text-purple-600 font-medium">
+                        View Programs
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Journey Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Journey</h2>
+              <div className="grid md:grid-cols-3 gap-8">
                 {/* Mentee Journey Card */}
                 <Link href="/programs/mentorship/mentee-journey" className="block">
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-blue-100">
@@ -227,29 +260,6 @@ export default function MentorshipPage() {
                   </div>
                 </Link>
 
-                {/* Mentorship Programs Card */}
-                <Link href="/programs/mentorship/programs" className="block">
-                  <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-purple-100">
-                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                      <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Programs</h3>
-                    <p className="text-gray-600 text-center mb-6">
-                      Explore our Special and Anchor mentorship programs designed for different needs and timelines.
-                    </p>
-                    <div className="text-center">
-                      <span className="inline-flex items-center text-purple-600 font-medium">
-                        View Programs
-                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-
                 {/* Institution Journey Card */}
                 <Link href="/programs/mentorship/institution-journey" className="block">
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-orange-100">
@@ -258,7 +268,7 @@ export default function MentorshipPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">For Institutions</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Institution Journey</h3>
                     <p className="text-gray-600 text-center mb-6">
                       Guide for educational institutions to integrate mentorship programs and support student development.
                     </p>
